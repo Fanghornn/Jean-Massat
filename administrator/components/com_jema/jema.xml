@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.0" method="upgrade">
+	<name>com_jema</name>
+	<creationDate>2013</creationDate>
+	<author>Jean Baptiste PRIAM MASSAT</author>
+	<authorEmail>jean.massat@gmail.com</authorEmail>
+	<authorUrl>https://github.com/Fanghornn</authorUrl>
+	<copyright>Copyright Info</copyright>
+    <license>License Info</license>
+    <version>0.0.1</version>
+    <description>Mon site personnel</description>
+    
+	<files folder="components/com_jema">
+		<filename>index.html</filename>
+		<filename>jema.php</filename>
+		<filename>controller.php</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<administration>
+		<menu link="option=com_jema">Administration Com Jema</menu>
+		<files folder="administrator/components/com_jema">
+			<filename>index.html</filename>
+			<filename>jema.php</filename>
+		</files>
+	</administration>
+</extension>
