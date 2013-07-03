@@ -9,4 +9,4 @@ defined('_JEXEC') or die('Not that way');
 <h1>Hey yoooooooooooooooo...</h1>
 <br/>
 <br/>
-<div>Salut le monde</div>
+<div class="helloworld">Salut le monde</div>

@@ -16,6 +16,10 @@ class JemaViewMain extends JViewLegacy{
 		$document->setTitle( $sitename.' - Accueil' );
 		$sitename = $mainframe->getCfg('sitename');
 		
+		//Script menu
+		$document->addScript(JURI::root().'components/com_jema/helpers/main_script.js');
+		
+
 		parent::display($tpl);
 	}
 }
