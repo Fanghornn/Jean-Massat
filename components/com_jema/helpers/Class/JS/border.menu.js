@@ -11,7 +11,7 @@ var BorderMenu = new Class({
 		cadreMenu.grab(buttonSlide);
 
 		cadreMenu.addEvent('mouseenter', function(){
-			cadreMenu.setStyle('margin-left', '-18.96em');
+			cadreMenu.setStyle('margin-left', '-20em');
 			buttonSlide.setProperty('html', '<');
 		});
 

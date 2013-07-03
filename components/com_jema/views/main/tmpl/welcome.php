@@ -8,9 +8,9 @@ defined('_JEXEC') or die('Not that way');
 ?>
 <div class="jema_cadre_menu"> 
 	<ul><a href="/jean-massat/">Accueil</a></a></ul>
-	<ul>lien 2</ul>
-	<ul>lien 3</ul>
-	<ul>lien 4</ul>
+	<ul><a>Blog</a></ul>
+	<ul><a>C.V.</a></ul>
+	<ul><a>A propos</a></ul>
 </div>
 
 
