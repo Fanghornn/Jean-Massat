@@ -25,4 +25,6 @@ jema.xml
 
 Installer le composant à l'aide du gestionnaire d'extension de Joomla, une fois ce dernier configuré et operationnel et avec l'archive générée precedement.
 
+Rajouter le lien menu principal du composant dans la gestion des menu de l'interface d'administration de Joomla.
+
 Tout le développement se fait dans components/com_jema au sein même du dossier root Joomla.
