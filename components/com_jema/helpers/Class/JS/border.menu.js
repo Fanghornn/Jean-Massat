@@ -11,13 +11,12 @@ var BorderMenu = new Class({
 		cadreMenu.grab(buttonSlide);
 
 		cadreMenu.addEvent('mouseenter', function(){
-			cadreMenu.setStyle('margin-left', '-20em');
+			cadreMenu.setStyle('left', '-.5em');
 			buttonSlide.setProperty('html', '<');
 		});
-
 		
 		cadreMenu.addEvent('mouseleave', function(){
-			cadreMenu.setStyle('margin-left', '-26em');
+			cadreMenu.setStyle('left', '-6.5em');
 			buttonSlide.setProperty('html', '>');
 		});
 	
