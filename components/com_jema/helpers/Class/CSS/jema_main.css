@@ -1,2 +1,6 @@
+/* jema header styles */
+.jema_banner{border-radius:2em; max-width:75%;}
 .jema_cadre_menu{transition: left 0.8s;width : 8em; height: 10em; border: grey solid .2em; z-index: 1000; position: fixed; float:left; left: -6.5em ; border-radius: .5em;  }
 .jema_menu_button_slide{float:right; top:-5.5em; position:relative; left:-.3em; }
+/* ////////////////// */
+.jema_content{width: 62em; height:42em; border:solid .1em grey;}
