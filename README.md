@@ -28,3 +28,8 @@ Installer le composant à l'aide du gestionnaire d'extension de Joomla, une fois
 Rajouter le lien menu principal du composant dans la gestion des menu de l'interface d'administration de Joomla.
 
 Tout le développement se fait dans components/com_jema au sein même du dossier root Joomla.
+
+Memo
+===========
+Polices: 
+Loaded : http://www.dafont.com/fr/loaded.font

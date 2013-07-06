@@ -1,6 +1,12 @@
 /* jema header styles */
-.jema_banner{border-radius:2em; max-width:75%;}
-.jema_cadre_menu{transition: left 0.8s;width : 8em; height: 10em; border: grey solid .2em; z-index: 1000; position: fixed; float:left; left: -6.5em ; border-radius: .5em;  }
-.jema_menu_button_slide{float:right; top:-5.5em; position:relative; left:-.3em; }
+.jema_banner{border-radius:2em; max-width:75%; margin-bottom:6em;}
+.jema_cadre_menu{transition: left 0.8s; background:white; width : 8em; height: 17.5em; border: grey solid .2em; z-index: 1000; position: fixed; float:left; left: -8.5em ; border-radius: .5em; padding-top:2em; padding-right:2em; }
+.jema_link_menu{border-bottom: 1px solid rgb(209, 209, 209);}
+.jema_menu_button_slide{ top:-5.4em; position:relative; left:6em; font-size: 1.7em;}
+.jema_btn_width{ width:4.3em;}
 /* ////////////////// */
-.jema_content{width: 62em; height:42em; border:solid .1em grey;}
+
+#rt-mainbody-surround{background: #E6E6E6; background-repeat: repeat;}
+.jema_content{background: white; width: 62em; height:42em; border:solid .1em grey; border-radius:.2em; padding:3em; }
+.jema_view_title{font-family: Loaded; width:16em;}
+.jema_menu_btn{padding-left: -5em;}

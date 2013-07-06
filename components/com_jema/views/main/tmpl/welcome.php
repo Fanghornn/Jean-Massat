@@ -5,24 +5,18 @@
  * 
  */
 defined('_JEXEC') or die('Not that way');
+require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.php');
 ?>
 
-<img class="jema_banner"src="images/banners/ban.png"/>
-
-
-<br/><br/>
-
-<div class="jema_cadre_menu"> 
-	<ul><a href="/jean-massat/">Accueil</a></a></ul>
-	<ul><a>Blog</a></ul>
-	<ul><a>C.V.</a></ul>
-	<ul><a>A propos</a></ul>
-</div>
 
 <div class="jema_content">
-	<h1>Hello World !</h1>
+	<h2 class="jema_view_title">Accueil - Jean Massat</h2>
 
+	<div>
+		Site en construction
+	</div>
+</div>
 
-
-
+<div>
+	Footer - 
 </div>
