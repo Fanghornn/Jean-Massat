@@ -24,5 +24,29 @@ class JemaController extends JControllerLegacy {
 		 } 
 		 parent::display($cachable = false, $urlparams = array());
 	}
+
+	public function blog(){
+		JRequest::setVar('view', 'blog');
+		JRequest::setVar('layout', 'blog');
+		parent::display($cachable = false, $urlparams = array());
+	}
+
+	public function cv(){
+		JRequest::setVar('view', 'cv');
+		JRequest::setVar('layout', 'cv');
+		parent::display($cachable = false, $urlparams = array());
+	}
+
+	public function contact(){
+		JRequest::setVar('view', 'contact');
+		JRequest::setVar('layout', 'contact');
+		parent::display($cachable = false, $urlparams = array());
+	}
+
+	public function about(){
+		JRequest::setVar('view', 'about');
+		JRequest::setVar('layout', 'about');
+		parent::display($cachable = false, $urlparams = array());
+	}
  }	  
 ?>
