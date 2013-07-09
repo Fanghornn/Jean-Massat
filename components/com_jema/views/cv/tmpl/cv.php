@@ -10,10 +10,8 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 
 
 <div class="jema_content">
-	<h2 class="jema_view_title">C.V. - Jean Massat</h2>
-
-	<div>
-		Site en construction
+	<h2 class="jema_view_title">C.V. - Jean Massat</h2><br/>
+		<img src="images/cv/cv_jb.jpg" class="img-polaroid jema_img_cv"/>
 	</div>
 </div>
 

@@ -27,6 +27,7 @@ class JemaViewBlog extends JViewLegacy{
 
 		//CSS calls
 		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main.css');
+		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_blog.css');
 
 		parent::display($tpl);
 	}
