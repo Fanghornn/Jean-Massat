@@ -8,7 +8,9 @@ Outils
 ===========
 Langages utilisés: [CSS], [PHP], [JS], [MOOTOOLS].
 
-Base de données: /*TODO*/
+Base de données: deux tables pour les articles et les commentaires du blog
+
+Framework Graphique: Gantry
 
 Sa structure se présente sous la forme d'un composant MVC pour le CMS Joomla.
 
@@ -18,14 +20,14 @@ Télécharger et décompresser une fraiche installation de Joomla 3.1 dans l'env
 
 Faire un git init à la racine de l'environement de travail de Joomla.
 
-Créer une archive ZIP de:
+Récuperer le .zip du composant:
 administrator/components/com_jema/*
 components/com_jema/*
 jema.xml
 
 Installer le composant à l'aide du gestionnaire d'extension de Joomla, une fois ce dernier configuré et operationnel et avec l'archive générée precedement.
 
-Rajouter le lien menu principal du composant dans la gestion des menu de l'interface d'administration de Joomla.
+Rajouter les liens de menu du composant dans la gestion des menu de l'interface d'administration de Joomla.
 
 Tout le développement se fait dans components/com_jema au sein même du dossier root Joomla.
 
