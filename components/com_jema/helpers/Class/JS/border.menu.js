@@ -5,21 +5,76 @@
  */
 var BorderMenu = new Class({
 	initialize: function(){
-		self = this;
-		var cadreMenu = document.getElement('.jema_cadre_menu'),
-		buttonSlide = new Element('i', {class:'jema_menu_button_slide icon-home'});
+		var self = this,
+		cadreMenu = document.getElement('.jema_cadre_menu'),
+		buttonSlide = new Element('i', {class:'jema_menu_button_slide icon-home'}),
+		btnHome = document.getElement('.jema_btn_home'),
+		btnBlog = document.getElement('.jema_btn_blog'),
+		btnCv = document.getElement('.jema_btn_cv'),
+		btnAbout = document.getElement('.jema_btn_about');
+
+		//Init positionnement
 		cadreMenu.grab(buttonSlide);
+		self.discardMenu(cadreMenu);
 
-		//var btnBlog = new Element('ul', {class:'jema_menu_btn', html:'<a class="btn btn-success jema_btn_width" href="/jean-massat/index.php/blog" >Blog</a>'});
-		//cadreMenu.grab(testEl);
-
+		/**
+		 * Events Cadre
+		 */
 		cadreMenu.addEvent('mouseenter', function(){
-			cadreMenu.setStyle('left', '-1.2em');
+			self.showMenu(cadreMenu);
 		});
 		
 		cadreMenu.addEvent('mouseleave', function(){
-			cadreMenu.setStyle('left', '-8.5em');
+			self.discardMenu(cadreMenu);
 		});
-	
+
+		/**
+		 * Event animation btn
+		 */
+		btnHome.addEvent('mouseenter', function(){
+			self.animateButton(btnHome);
+		});
+		btnBlog.addEvent('mouseenter', function(){
+			self.animateButton(btnBlog);
+		});
+		btnCv.addEvent('mouseenter', function(){
+			self.animateButton(btnCv);
+		});
+		btnAbout.addEvent('mouseenter', function(){
+			self.animateButton(btnAbout);
+		});
+
+		/**
+		 * Event reset animation btn
+		 */
+		btnHome.addEvent('mouseleave', function(){
+			self.inanimateButton(btnHome, 'home');
+		});
+		btnBlog.addEvent('mouseleave', function(){
+			self.inanimateButton(btnBlog, 'blog');
+		});
+		btnCv.addEvent('mouseleave', function(){
+			self.inanimateButton(btnCv, 'cv');
+		});
+		btnAbout.addEvent('mouseleave', function(){
+			self.inanimateButton(btnAbout, 'about');
+		});
+	}
+	/*Change left style property to simulate a slide effect */
+	,showMenu: function(cadreMenu){
+		cadreMenu.setStyle('left', '-.2em');
+	}
+	/*Reset Cadre position*/
+	,discardMenu: function(cadreMenu){
+		cadreMenu.setStyle('left', '-9.2em');
+	}
+	,animateButton: function(el){
+		el.setStyle('margin-left', '0px');
+		el.getElement('.icon-fast-forward').destroy();
+	}
+	,inanimateButton: function(el, name){
+		el.setStyle('margin-left', '-9em');
+		var resuractedIcon = new Element('i', {class:'icon-fast-forward jema_icon_menu jema_icon_'+name});
+		el.grab(resuractedIcon);
 	}
 });

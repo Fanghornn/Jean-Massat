@@ -12,7 +12,7 @@ class JemaViewMain extends JViewLegacy{
 		$mainframe = JFactory::getApplication();
 
 		//Loading Mootools scripts before others
-		JHTML::_('behavior.framework');
+		JHTML::_('behavior.framework', true);
 		
 		//personalliser la page (JDocument)
 		$document = JFactory::getDocument();
