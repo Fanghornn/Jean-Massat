@@ -3,5 +3,10 @@ height: 101%;
 background: #E6E6E6;
 } 
 h2{
-	width:auto;
+	width:auto !important; 
+	border:none !important;
+	padding:1em;
+	padding-left:0em;
+	padding-top:.5em;
+	padding-bottom:.5em;
 }
