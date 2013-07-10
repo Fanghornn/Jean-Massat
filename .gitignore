@@ -400,7 +400,6 @@ plugins/index.html
 templates/atomic/*
 templates/beez_20/*
 templates/beez5/*
-templates/system/*
 templates/index.html
 tmp/*
 bin/*
@@ -411,7 +410,13 @@ language/*
 plugins/*
 libraries/*
 media/*
-templates/*
+templates/beez3/*
+templates/protostar/*
+templates/system/*
+templates/gantry/*
+!templates/gantry/css
+templates/gantry/css/*
+!templates/gantry/css/gantry-custom.css
 modules/*
 configuration.php
 index.php
