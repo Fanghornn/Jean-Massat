@@ -35,3 +35,8 @@ Memo
 ===========
 Polices: 
 Loaded : http://www.dafont.com/fr/loaded.font
+
+10/07/2013 : gros bug serveur 
+> récuperation du js + php avec git [OK]
+>> Mise en forme de jema_main.css(commentaires pour catégoriser les classes) [wait]
+>> Redifinition du style de l'icone btn_home du border.js en grand et bien placé [wait]
