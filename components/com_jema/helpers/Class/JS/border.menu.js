@@ -6,8 +6,8 @@
 var BorderMenu = new Class({
 	initialize: function(){
 		var self = this,
+		buttonSlide = new Element('i', {class:'jema_menu_btn_slide icon-home', html:'<a href:"#h2"></a>'}),
 		cadreMenu = document.getElement('.jema_cadre_menu'),
-		buttonSlide = new Element('i', {class:'jema_menu_button_slide icon-home'}),
 		btnHome = document.getElement('.jema_btn_home'),
 		btnBlog = document.getElement('.jema_btn_blog'),
 		btnCv = document.getElement('.jema_btn_cv'),
@@ -66,7 +66,7 @@ var BorderMenu = new Class({
 	}
 	/*Reset Cadre position*/
 	,discardMenu: function(cadreMenu){
-		cadreMenu.setStyle('left', '-9.2em');
+		cadreMenu.setStyle('left', '-11.2em');
 	}
 	,animateButton: function(el){
 		el.setStyle('margin-left', '0px');
