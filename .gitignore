@@ -1,6 +1,7 @@
 .gitignore
 .gitignore~
 .htaccess
+README.md~
 administrator/cache/*
 administrator/components/com_admin/*
 administrator/components/com_banners/*
