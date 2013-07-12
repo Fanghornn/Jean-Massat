@@ -16,7 +16,3 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		Site en construction
 	</div>
 </div>
-
-<div>
-	Footer - 
-</div>

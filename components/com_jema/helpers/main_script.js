@@ -1,12 +1,19 @@
 window.onload = function (){
 	var menuLiens = new BorderMenu();
+	setCdrProfilPos();
+
 }
-
-
 
 window.onresize = function (){
-	console.log('resizing window val'+window.getSize().x+'DOMval'+document.getSize().x);
-
+	setCdrProfilPos();
 }
 
 
+//Function setting left style by getting jema_content width for jema_cadre_profil
+function setCdrProfilPos(){
+	var jemaContent = document.getElement('.jema_content'),
+	jemaCadreProfil = document.getElement('.jema_cadre_profil'),
+	jemaContentWidth = jemaContent.getStyle('width').toInt();
+
+	jemaCadreProfil.setStyle('left', (jemaContentWidth+150));
+}

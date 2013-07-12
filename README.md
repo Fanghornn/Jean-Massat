@@ -33,5 +33,8 @@ Tout le développement se fait dans components/com_jema au sein même du dossier
 
 Memo
 ===========
+> Faire une fonction JS pour que le site apparaisse en integralité dans le window navigateur pour les petites resolutions.
+
 Polices: 
 Loaded : http://www.dafont.com/fr/loaded.font
+

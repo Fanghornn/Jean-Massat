@@ -5,6 +5,9 @@
 .jema_btn:hover{color:white;}
 .jema_menu_classic{border: 0.1em solid grey;background:white; box-shadow: .2em .1em .8em .1em; height:auto; max-height:3em; max-width:37em; padding:1em; border-radius: .2em;}
 .jema_menu_classic_btn{margin-left:2em; }
+.jema_cadre_profil {box-shadow: .2em .2em .9em .2em; background:white; width: 19em; position:absolute; height: 45em; padding-top:1em;}
+.jema_cadre_profil_pic{padding:3em;}
+.jema_cadre_profil_infos{text-align:center; font-weight:bold; font-size:1.05em;}
 /*jema icon styles*/
 .jema_icon_menu{padding-left:2em; font-size:1.2em;}
 .jema_icon_blog{margin-left: 1.3em;}
@@ -12,6 +15,6 @@
 .jema_icon_about{margin-left:-1em;}
 .jema_menu_btn_slide{font-size: 4em; top: -2.8em; position: relative; left: 3.03em;}
 /* ////////////////// */
-.jema_content{background: white; width:auto; min-width:40em; min-height:50em; max-height:none; height:auto; border:solid .1em grey; border-radius:.2em; padding:3em; }
+.jema_content{background: white; width:auto; max-width:65em; min-width:40em; min-height:50em; max-height:none; height:auto; border:solid .1em grey; border-radius:.2em; padding:3em; }
 .jema_view_title{font-family: Loaded; width:16em;}
 

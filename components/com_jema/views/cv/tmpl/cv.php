@@ -14,7 +14,3 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		<img src="images/images_jema/cv_jb.jpg" class="img-polaroid jema_img_cv"/>
 	</div>
 </div>
-
-<div>
-	Footer - 
-</div>
