@@ -16,4 +16,5 @@ function setCdrProfilPos(){
 	jemaContentWidth = jemaContent.getStyle('width').toInt();
 
 	jemaCadreProfil.setStyle('left', (jemaContentWidth+150));
+	jemaCadreProfil.removeClass('jema_hidden');
 }

@@ -14,7 +14,7 @@ defined('_JEXEC') or die('Not that way');
 	<a class="jema_btn jema_btn_cv" href="/jean-massat/index.php/cv">.:: CV ::.<i class="icon-fast-forward jema_icon_menu jema_icon_cv"></a></i><br/><br/>
 	<a class="jema_btn jema_btn_about" href="/jean-massat/index.php/about">.:: A propos ::.<i class="icon-fast-forward jema_icon_menu jema_icon_about"></a></i><br/>
 </div>
-<div class="jema_cadre_profil">
+<div class="jema_cadre_profil jema_hidden">
 	<span class="jema_cadre_profil_pic">
 		<img src="/jean-massat/images/images_jema/gentlemen.jpg" width="200"/>
 	</span>

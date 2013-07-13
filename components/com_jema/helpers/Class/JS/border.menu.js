@@ -15,7 +15,7 @@ var BorderMenu = new Class({
 
 		//Init positionnement
 		cadreMenu.grab(buttonSlide);
-		self.discardMenu(cadreMenu);
+		self.showMenu(cadreMenu);
 
 		/**
 		 * Events Cadre

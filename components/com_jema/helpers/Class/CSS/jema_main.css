@@ -17,4 +17,4 @@
 /* ////////////////// */
 .jema_content{background: white; width:auto; max-width:65em; min-width:40em; min-height:50em; max-height:none; height:auto; border:solid .1em grey; border-radius:.2em; padding:3em; }
 .jema_view_title{font-family: Loaded; width:16em;}
-
+.jema_hidden{visibility:hidden;}
