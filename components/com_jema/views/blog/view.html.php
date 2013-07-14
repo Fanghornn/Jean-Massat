@@ -25,6 +25,9 @@ class JemaViewBlog extends JViewLegacy{
 		//Script menu call
 		$document->addScript(JURI::root().'components/com_jema/helpers/Class/JS/border.menu.js');
 
+		//Blog script call
+		$document->addScript(JURI::root().'components/com_jema/helpers/Class/JS/blog.js'); 
+
 		//CSS calls
 		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main.css');
 		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_blog.css');
