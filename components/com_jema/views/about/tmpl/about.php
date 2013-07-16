@@ -9,7 +9,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 ?>
 
 
-<div class="jema_content">
+
 	<h2 class="jema_view_title">- A propos -</h2>
 
 	<div>
