@@ -1,13 +1,14 @@
 /* jema header styles */
-.jema_cadre_menu{transition: left 0.8s; background:silver; width :10em; height:75%; top:-1em; border: grey solid .2em; z-index: 1000; position: fixed; float:left; left: -9.2em ; border-radius: .5em; padding-top:2em; padding-right:2em; }
+.jema_cadre_menu{transition: left 0.8s; width :10em; height:49%; top:3em; z-index: 1000; position: fixed; border-radius: .5em; padding-top:2em; padding-right:2em; left:-.2em; }
 .jema_link_menu{border-bottom: 1px solid rgb(209, 209, 209);}
 .jema_btn{transition: margin-left 0.3s; margin-left:-9em; border-top:solid grey .2em; border-bottom:solid grey .2em; padding-top:1em; padding-bottom:1em; display:inline-block; width:12em; font-family:Loaded; background:#313739; color:white; text-align:center;}
 .jema_btn:hover{color:white;}
 .jema_menu_classic{border: 0.1em solid grey;background:white; box-shadow: .2em .1em .8em .1em; height:auto; max-height:3em; max-width:37em; padding:1em; border-radius: .2em;}
 .jema_menu_classic_btn{margin-left:2em; }
-.jema_cadre_profil {box-shadow: .2em .2em .9em .2em; background:white; width: 21em; position:absolute; height: 45em; padding-top:1em; padding-left:1em; padding-right:1em;}
+.jema_cadre_profil {box-shadow: .2em .2em .9em .2em; background:white; width: 21em; position:absolute; height: 45em; padding-top:1em; padding-left:1em; padding-right:1em; top:4.5em;}
 .jema_cadre_profil_pic{padding:3.6em;}
 .jema_cadre_profil_infos{text-align:center; font-weight:bold; font-size:1.05em;}
+.jema_toggle_classic_menu{left: 1em; position: relative; background: none repeat scroll 0% 0% rgb(49, 55, 57); color:white; border: 0.2em solid grey; text-align:center; font-family:Loaded; font-size:1.3em; top:-2em;}
 /*jema icon styles*/
 .jema_icon_menu{padding-left:2em; font-size:1.2em;}
 .jema_icon_blog{margin-left: 1.3em;}
@@ -15,7 +16,6 @@
 .jema_icon_about{margin-left:-1em;}
 .jema_menu_btn_slide{font-size:3em; top:-3.7em; position:relative; left:4.07em;}
 /* ////////////////// */
-.jema_content{background: white; width:auto; max-width:65em; min-width:40em; min-height:50em; max-height:none; height:auto; border:solid .1em grey; border-radius:.2em; padding:3em; }
+.jema_content{background: white; width:auto; max-width:65em; min-height:100%; max-height:none; height:auto; border:solid .1em grey; border-radius:.2em; padding:3em; }
 .jema_view_title{font-family: Loaded; width:16em;}
-.jema_hidden{visibility:hidden;}
-.jema_article_creator{}
+.jema_hidden{visibility:hidden; display:none;}
