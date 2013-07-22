@@ -16,9 +16,8 @@ Class JemaModelMain extends JModelLegacy{
 	}
 	
 	public static function getArticle(){
-		$result = array();
 		$db = JFactory::getDBO();
-		$query = "select `titre_article`, `content_article` from `#__jema_articles`";
+		$query = "select `titre_article`, `content_article`, `img_src` from `#__jema_articles` a, `#__jema_articles_images` i where i.id_article=a.id_article";
 		$db->setQuery($query);
 		$rows = $db->loadAssocList();
 
