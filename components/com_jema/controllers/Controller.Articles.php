@@ -52,12 +52,14 @@ class articlesController{
 					$uploadArr = self::saveImage($image, $imgname);
 					$src = $uploadArr["src"];
 
-					$query = "insert into `#__jema_articles_images` (`img_name`, `img_taille`, `img_type`, `img_src`, `id_article`)";
-					$query .=  " values ('".$imgname."', '".$imgsize."', '".$imgtype."', '".$src."', '".$id_article."');";
-					$db->setQuery($query);
-					$db->execute();
+					if($uploadArr["code"]==0){
+						$query = "insert into `#__jema_articles_images` (`img_name`, `img_taille`, `img_type`, `img_src`, `id_article`)";
+						$query .=  " values ('".$imgname."', '".$imgsize."', '".$imgtype."', '".$src."', '".$id_article."');";
+						$db->setQuery($query);
+						$db->execute();
+					}else return $uploadArr;
 				}
-			}
+			}else return $result;
 		}
 	}
 
@@ -122,10 +124,10 @@ class articlesController{
 
 		if ( JFile::upload($src, $dest) ) { 
 			$code = 0;
-			$message = "Upload ok !"; 
+			$message = "Upload image ok !"; 
 		}else{ 
 			$code = 8; 
-			$message = "Upload foiré !"; 
+			$message = "Upload image foiré !"; 
 		}
 		$result = array("code"=>$code, "message"=>$message, "src"=>$url);
 		return $result;
