@@ -33,7 +33,6 @@ Tout le développement se fait dans components/com_jema au sein même du dossier
 
 Memo
 ===========
-> Faire une Class PHP pour les articles du blog, une classe sera instanciés à chaque retour de la bdd
 
 Polices: 
 Loaded : http://www.dafont.com/fr/loaded.font
