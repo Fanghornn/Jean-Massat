@@ -11,26 +11,32 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 
 	<h2 class="jema_view_title">Le blog de Fanghornn</h2><br/>
 	<?php 
+		$user = JFactory::getUser();
 		$dbresponse = JemaModelMain::getArticle();
 		foreach ($dbresponse as $row){
 	?>
-	<div class="jema_article_cadre">
-		<h3 class="jema_article_title">
+	<span class="jema_article_title">
 			<?php echo $row["titre_article"]; ?>
-		</h3><br/>
+	</span><br/><br/>
+
+	<div class="jema_article_cadre">
 		<img class="jema_article_image" src="<?php echo $row["img_src"]; ?>"/><br/><br/>
 		<p class="jema_article_content">
 			<?php echo $row["content_article"]; ?>
 		</p>
+		<?php	if(isset($user->groups[8]) || isset($user->groups[7])){?>
+				<button class="btn btn-small btn-danger">
+					Supprimer l'article
+				</button>
+				<button class="btn btn-small btn-warning">
+					Editer l'article
+				</button><br/><br/>
+		<?php } ?>
 	</div>
 	<br/><br/>
-	<?php 
-		}
-	?>
+	<?php }?>
 	<br/>
 	<?php
-		$user = JFactory::getUser();
-
 		if(isset($user->groups[8]) || isset($user->groups[7])){?>
 			<div class="jema_article_creator">
 				Bonjour Administrateur, Veux tu créer un nouvel article ?<br/>
