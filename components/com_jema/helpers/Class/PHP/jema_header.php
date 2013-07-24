@@ -45,9 +45,6 @@ defined('_JEXEC') or die('Not that way');
 				<br/><br/>
 				Mon profil Github: <iframe src="http://ghbtns.com/github-btn.html?user=Fanghornn&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="20"></iframe>
 				<br/><br/>
-				Profil Steam(pour les gamer):<br/>
-				<a href="http://steamcommunity.com/id/kesai/" target="_blank"><img src="http://badges.steamprofile.com/profile/default/steam/76561197982614240.png" border="0" alt="Steamprofile badge by Steamprofile.com"></a>
-
 			</div>
 			
 		</div>
