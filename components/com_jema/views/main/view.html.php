@@ -27,6 +27,7 @@ class JemaViewMain extends JViewLegacy{
 
 		//CSS calls
 		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main.css');
+		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_home.css');
 
 		parent::display($tpl);
 	}
