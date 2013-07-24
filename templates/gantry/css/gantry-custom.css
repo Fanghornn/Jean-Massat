@@ -1,15 +1,4 @@
-body {
-height: 101%;
-background: #E6E6E6;
-} 
-h2{
-	width:auto !important; 
-	border:none !important;
-	padding:1em;
-	padding-left:0em;
-	padding-top:.5em;
-	padding-bottom:.5em;
-}
-h3{
-	border:none;
-}
+body{height: 100%; background: #E6E6E6;}
+h1{font-family: Tahoma, Verdana, Segoe, sans-serif; font-weight: bold; color: #386F48; padding-bottom: .2em; font-size: 1.85em;}
+h2{width:auto !important; border:none !important; padding:1em; padding-left:0em; padding-top:.2em; padding-bottom:.5em; text-align:center !important;}
+h3{border:none;}
