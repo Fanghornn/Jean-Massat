@@ -7,21 +7,15 @@
 defined('_JEXEC') or die('Not that way');
 require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.php');
 ?>
-<h2 class="jema_view_title">
-	Acceuil
-</h2>
-
-<br/>
-
 <h1> 
 	Bienvenue sur le site de Fanghornn !
 </h1>
 
-<br/><br/><br/>
+<br/>
 
 <img class="jema_home_img" src="/jean-massat/images/images_jema/triforce.png"/>
 
-<p>
+<p class="jema_paragraph_welcome">
 	J'ai développé ce site dans un premier temps afin de perfectionner mes connaissances de développement 
 	acquises durant ma formation de développeur logiciel.<br/><br/>
 

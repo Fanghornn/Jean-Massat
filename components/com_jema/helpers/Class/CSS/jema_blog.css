@@ -2,4 +2,4 @@
 .jema_article_content{font-size:1.2em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; line-height: 200%; text-align: justify; }
 .jema_article_content:first-letter{padding-left:4em;}
 .jema_article_cadre{ max-width:100%; box-shadow:.1em .1em .1em .1em ;padding:2em; border-radius: 0.1em 0.5em 0.1em 0.5em;}
-.jema_article_image{height: auto; max-width:100%; border-radius:.2em; box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);}
+.jema_article_image{height:auto; max-width:85% !important; border-radius:.2em; box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);}
