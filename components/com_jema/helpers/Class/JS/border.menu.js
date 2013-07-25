@@ -6,41 +6,77 @@
 var BorderMenu = new Class({
 	initialize: function(){
 		var self = this,
-		classicMenu = new Element('div', {class:'jema_toggle_classic_menu', html:'Menu'}),
 		cadreMenu = document.getElement('.jema_cadre_menu'),
+		btnArr = self.getLinksItems(),
+		btnClassNameArr = new Array('home', 'blog', 'cv', 'about');
+
+		btnArr.forEach(function(btn, i){
+			self.inanimateButton(btn, btnClassNameArr[i], false);
+		});
+
+		btnArr.forEach(function(btn){
+			self.animateButton(btn, false);
+		});
+	}
+	,animateButton: function(el, scrollTop){
+		if(scrollTop){
+			el.setStyle('margin-left', '0px');
+			if(el.getElement('.icon-fast-forward'))el.getElement('.icon-fast-forward').destroy();
+		}
+		else{
+			el.addEvent('mouseenter', function(){
+				el.setStyle('margin-left', '0px');
+				if(el.getElement('.icon-fast-forward'))el.getElement('.icon-fast-forward').destroy();
+			});
+		}
+	}
+	,inanimateButton: function(el, name, scrollAway){
+		var self = this;
+			var resuractedIcon = new Element('i', {class:'icon-fast-forward jema_icon_menu jema_icon_'+name});
+
+		if(scrollAway){
+			el.setStyle('margin-left', '-9em');
+			if(!document.getElement('.jema_icon_'+name))el.grab(resuractedIcon);
+		}
+		else{
+			el.addEvent('mouseleave', function(){
+				el.setStyle('margin-left', '-9em');
+				console.log('inanimate else !');
+				el.grab(resuractedIcon);
+			});
+		}
+	}
+	,getLinksItems:function(){
 		btnHome = document.getElement('.jema_btn_home'),
 		btnBlog = document.getElement('.jema_btn_blog'),
 		btnCv = document.getElement('.jema_btn_cv'),
-		btnAbout = document.getElement('.jema_btn_about');
+		btnAbout = document.getElement('.jema_btn_about'),
+		btnArr = new Array(btnHome, btnBlog, btnCv, btnAbout);
 
-		classicMenu.inject(btnHome, 'before');
-		/**
-		 * Event animation btn
-		 */
-		self.animateButton(btnHome);
-		self.animateButton(btnBlog);
-		self.animateButton(btnCv);
-		self.animateButton(btnAbout);
-
-		/**
-		 * Event reset animation btn
-		 */
-		self.inanimateButton(btnHome, 'home');
-		self.inanimateButton(btnBlog, 'blog');
-		self.inanimateButton(btnCv, 'cv');
-		self.inanimateButton(btnAbout, 'about');
+		return btnArr;
 	}
-	,animateButton: function(el){
-		el.addEvent('mouseenter', function(){
-			el.setStyle('margin-left', '0px');
-			el.getElement('.icon-fast-forward').destroy();
+	,scrollOnTop: function(arrEl){
+		var self = this;
+		if(document.getElement('.jema_toggle_classic_menu')){
+			if((document.getElement('.jema_toggle_classic_menu').getStyle('opacity'))===0){
+				console.log('scrollOnTop');
+				document.getElement('.jema_toggle_classic_menu').setStyle('opacity', '1');
+				/*menuTitle = new Element('div', {class:'jema_toggle_classic_menu', html:'Menu'});
+				menuTitle.inject(arrEl[0], 'before')*/
+			}
+		}
+		
+		arrEl.forEach(function(btn){
+			self.animateButton(btn, true);
 		});
 	}
-	,inanimateButton: function(el, name){
-		el.addEvent('mouseleave', function(){
-			el.setStyle('margin-left', '-9em');
-			var resuractedIcon = new Element('i', {class:'icon-fast-forward jema_icon_menu jema_icon_'+name});
-			el.grab(resuractedIcon);
+	,scrollingAway: function(arrEl){
+		var self = this,
+		btnClassNameArrScroll = new Array('home', 'blog', 'cv', 'about');
+
+		if(document.getElement('.jema_toggle_classic_menu'))document.getElement('.jema_toggle_classic_menu').setStyle('opacity', '0');
+		arrEl.forEach(function(btn, i){
+			self.inanimateButton(btn, btnClassNameArrScroll[i],'true');
 		});
-	}	
+	}
 });

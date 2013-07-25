@@ -1,10 +1,30 @@
-window.onload = function (){
-	var menuLiens = new BorderMenu();
-	setCdrProfilPos();
+window.onload = function(){
+	window.scrollTo(0,0);
+	var menu = new BorderMenu(),
+	menuLinks = menu.getLinksItems(),
+	loopBuster = true;
 
+	setCdrProfilPos();
+	menu.scrollOnTop(menuLinks);
+
+	window.onscroll = function(){
+		var scrollValue = window.getScroll();
+		if(scrollValue.y==0){
+			menu.scrollOnTop(menuLinks);
+			loopBuster=true;
+		}
+		else{
+			if(loopBuster){
+				loopBuster=false;
+				menu.scrollingAway(menuLinks);
+			}
+		}
+	}
 }
 
-window.onresize = function (){
+
+
+window.onresize = function(){
 	setCdrProfilPos();
 }
 

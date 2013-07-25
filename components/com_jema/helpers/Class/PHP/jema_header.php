@@ -9,13 +9,12 @@ defined('_JEXEC') or die('Not that way');
 <br/><br/>
 
 <div class="jema_cadre_menu"> 
+	<div class="jema_toggle_classic_menu">Menu</div>
 	<a class="jema_btn jema_btn_home" href="/jean-massat/">.:: Accueil ::.<i class="icon-fast-forward jema_icon_menu jem_icon_home"></a></i><br/><br/>
 	<a class="jema_btn jema_btn_blog" href="/jean-massat/index.php/blog" >.:: Blog ::.<i class="icon-fast-forward jema_icon_menu jema_icon_blog"></a></i><br/><br/>
 	<a class="jema_btn jema_btn_cv" href="/jean-massat/index.php/cv">.:: Dev ::.<i class="icon-fast-forward jema_icon_menu jema_icon_cv"></a></i><br/><br/>
 	<a class="jema_btn jema_btn_about" href="/jean-massat/index.php/about">.:: A propos ::.<i class="icon-fast-forward jema_icon_menu jema_icon_about"></a></i><br/>
 </div>
-
-<div class="jema_content">
 
 	<div class="jema_cadre_profil jema_hidden">
 
@@ -50,3 +49,5 @@ defined('_JEXEC') or die('Not that way');
 		</div>
 
 	</div>
+
+<div class="jema_content">

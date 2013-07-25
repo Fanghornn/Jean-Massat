@@ -8,11 +8,11 @@
 .jema_cadre_profil {box-shadow: .2em .2em .9em .2em; background:white; width: 21em; position:absolute; height: 45em; padding-top:1em; padding-left:1em; padding-right:1em; top:4.5em;}
 .jema_cadre_profil_pic{padding:3.6em;}
 .jema_cadre_profil_infos{text-align:center; font-weight:bold; font-size:1.05em;}
-.jema_toggle_classic_menu{left: 1em; position: relative; background: none repeat scroll 0% 0% rgb(49, 55, 57); color:white; border: 0.2em solid grey; text-align:center; font-family:Loaded; font-size:1.3em; top:-2em;}
+.jema_toggle_classic_menu{transition: opacity 1s; left: 1em; position: relative; background: none repeat scroll 0% 0% rgb(49, 55, 57); color:white; border: 0.2em solid grey; text-align:center; font-family:Loaded; font-size:1.3em; top:-2em;}
 /*jema icon styles*/
 .jema_icon_menu{padding-left:2em; font-size:1.2em;}
 .jema_icon_blog{margin-left: 1.3em;}
-.jema_icon_cv{margin-left:2.4em;}
+.jema_icon_cv{margin-left:1.9em;}
 .jema_icon_about{margin-left:-1em;}
 .jema_menu_btn_slide{font-size:3em; top:-3.7em; position:relative; left:4.07em;}
 /* ////////////////// */
