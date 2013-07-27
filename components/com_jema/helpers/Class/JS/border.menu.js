@@ -41,7 +41,6 @@ var BorderMenu = new Class({
 		else{
 			el.addEvent('mouseleave', function(){
 				el.setStyle('margin-left', '-9em');
-				console.log('inanimate else !');
 				el.grab(resuractedIcon);
 			});
 		}
@@ -59,10 +58,7 @@ var BorderMenu = new Class({
 		var self = this;
 		if(document.getElement('.jema_toggle_classic_menu')){
 			if((document.getElement('.jema_toggle_classic_menu').getStyle('opacity'))===0){
-				console.log('scrollOnTop');
 				document.getElement('.jema_toggle_classic_menu').setStyle('opacity', '1');
-				/*menuTitle = new Element('div', {class:'jema_toggle_classic_menu', html:'Menu'});
-				menuTitle.inject(arrEl[0], 'before')*/
 			}
 		}
 		

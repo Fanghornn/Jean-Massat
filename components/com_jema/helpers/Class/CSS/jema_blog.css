@@ -1,5 +1,5 @@
-.jema_article_title{font-family: Tahoma, Verdana, Segoe, sans-serif; font-weight: bold; color: #386F48; padding-bottom: .2em; font-size: 1.75em;}
+.jema_article_title{font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; font-weight: bold; color: #386F48; padding-bottom:.50em; padding-top:.50em; display:inline-block; font-size: 1.75em; text-decoration: underline;}
 .jema_article_content{font-size:1.2em; font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; line-height: 200%; text-align: justify; }
 .jema_article_content:first-letter{padding-left:4em;}
-.jema_article_cadre{ max-width:100%; box-shadow:.1em .1em .1em .1em ;padding:2em; border-radius: 0.1em 0.5em 0.1em 0.5em;}
-.jema_article_image{height:auto; max-width:85% !important; border-radius:.2em; box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);}
+.jema_article_image{position:relative; border-radius:.2em; box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);}
+.jema_form_article{text-align: center; font-weight: bold;}

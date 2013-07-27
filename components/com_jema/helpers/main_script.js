@@ -4,6 +4,7 @@ window.onload = function(){
 	menuLinks = menu.getLinksItems(),
 	loopBuster = true;
 
+	//setCdrContent();
 	setCdrProfilPos();
 	menu.scrollOnTop(menuLinks);
 
@@ -25,6 +26,7 @@ window.onload = function(){
 
 
 window.onresize = function(){
+	//setCdrContent();
 	setCdrProfilPos();
 }
 
@@ -36,4 +38,10 @@ function setCdrProfilPos(){
 	jemaContentWidth = jemaContent.getStyle('width').toInt();
 	jemaCadreProfil.setStyle('left', (jemaContentWidth+115));
 	jemaCadreProfil.removeClass('jema_hidden');
+}
+
+function setCdrContent(){
+	var jemaContent = document.getElement('.jema_content'),
+	windowSize = window.getSize();
+	jemaContent.setStyle('max-width', (windowSize.x-250));
 }
