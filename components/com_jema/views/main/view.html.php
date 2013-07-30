@@ -26,8 +26,13 @@ class JemaViewMain extends JViewLegacy{
 		$document->addScript(JURI::root().'components/com_jema/helpers/Class/JS/border.menu.js');
 
 		//CSS calls
-		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main.css');
 		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_home.css');
+		if(Jema::isMobile()){
+			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main_mobile.css');
+		}
+		else{
+			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main.css');
+		}
 
 		parent::display($tpl);
 	}

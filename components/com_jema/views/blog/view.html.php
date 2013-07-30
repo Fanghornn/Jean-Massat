@@ -29,9 +29,14 @@ class JemaViewBlog extends JViewLegacy{
 		$document->addScript(JURI::root().'components/com_jema/helpers/Class/JS/blog.js'); 
 
 		//CSS calls
-		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main.css');
-		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_blog.css');
-
+		if(Jema::isMobile()){
+			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_blog_mobile.css');
+			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main_mobile.css');
+		}
+		else{
+			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_blog.css');
+			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main.css');
+		}
 		parent::display($tpl);
 	}
 }

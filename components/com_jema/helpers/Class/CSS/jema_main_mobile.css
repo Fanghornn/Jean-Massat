@@ -1,0 +1,11 @@
+/* jema header styles */
+.jema_mobile_menu_btn_container{position:fixed; z-index:1000;  top:1em; left:.2em;}
+.jema_mobile_menu_btn{background: darkgrey; color:white; width:2em; height:2em; font-size:1.5em;}
+.jema_icon_mobile{font-size:1.5em; padding-top:.3em; padding-bottom: .3em;}
+.jema_mobile_menu_links{transition:margin-left 0.5s; margin-left:-6.5em; margin-bottom:.5em; margin-top:.5em; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; border-top:solid grey .2em; border-bottom:solid grey .2em; border-right:solid grey .2em;padding-bottom: 1.2em; display:inline-block; width:6em; background:#313739; color:white; font-size:1em; text-align:center; height:1em;}
+/* ////////////////// */
+.jema_content{left:0em; font-family: Tahoma, Verdana, Segoe, sans-serif; background: white; width:auto; max-width:65em; min-height:80%; border:solid .1em grey; border-radius:.2em; line-height: 200%; position:absolute; top:8em;}
+.jema_view_title{font-family: Loaded; width:16em;}
+.jema_hidden{visibility:hidden; display:none;}
+::selection{background:#386F48; color:white;}
+::-moz-selection{background:#386F48; color:white;}
