@@ -9,6 +9,7 @@ defined('_JEXEC')or die('Not that way');
 jimport('joomla.application.component.controller');
 require_once JPATH_COMPONENT.'/models/JemaModelMain.php';
 require_once JPATH_COMPONENT.'/controllers/Controller.Articles.php';
+require_once JPATH_COMPONENT.'/helpers/jema.php';
 
 class JemaController extends JControllerLegacy {
 	
