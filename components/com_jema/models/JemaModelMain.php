@@ -22,7 +22,6 @@ Class JemaModelMain extends JModelLegacy{
 					LEFT JOIN `#__jema_articles_images` AS i ON i.id_article = a.id_article";
 		$db->setQuery($query);
 		$rows = $db->loadAssocList();
-
 		return $rows;
 	}
 }

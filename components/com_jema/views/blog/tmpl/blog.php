@@ -15,46 +15,50 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		$dbresponse = JemaModelMain::getArticle();
 		foreach ($dbresponse as $row){
 	?>
-	<span class="jema_article_title">
-			<?php echo $row["titre_article"]; ?>
-	</span>
-	<?php if($row["img_src"]!=null){ ?>
-	<br/>
-	<span>
-		<img class="jema_article_image img-polaroid" src="<?php echo $row["img_src"]; ?>"/>
-	</span>
-	<?php } ?>
-	<br/>
-	<p class="jema_article_content">
-		<?php echo $row["content_article"]; var_dump($row["img_src"]);?>
-	</p>
-	<div class="footer article">
-		<?php	if(isset($user->groups[8]) || isset($user->groups[7])){?>
-		<button class="btn btn-small btn-danger">
-			Supprimer l'article
-		</button>
-		<button class="btn btn-small btn-warning">
-				Editer l'article
-		</button>
-		<br/>
-			<?php 
-				}
-			?>
-		<span>
-			Posté le <?php echo $row["date_creation"] ?>
+	<div class="jema_article" data-article="<?php echo $row["id_article"]; ?>">
+		<span class="jema_article_title">
+				<?php echo $row["titre_article"]; ?>
 		</span>
-		<br/><br/>
-		<div class="progress progress-striped">
-	    	<div class="bar bar-warning" style="width: 100%;"></div>
-	    </div>
+		<?php if($row["img_src"]!=null){ ?>
+		<br/>
+		<span class="pagination-centered">
+			<img class="<?php if(Jema::isMobile()) echo "jema_article_image"; else echo "jema_article_image img-polaroid"; ?>" src="<?php echo $row["img_src"]; ?>"/>
+		</span>
+		<?php } ?>
+		<br/>
+		<p class="jema_article_content">
+			<?php 
+				echo nl2br($row["content_article"]);	
+			?>
+		</p>
+		<div class="footer article">
+			<?php	if(isset($user->groups[8]) || isset($user->groups[7])){?>
+			<button class="btn btn-small btn-danger jema_delete_article">
+				Supprimer l'article
+			</button>
+			<button class="btn btn-small btn-warning">
+					Editer l'article
+			</button>
+			<br/>
+				<?php 
+					}
+				?>
+			<span>
+				Posté le <?php echo $row["date_creation"] ?>
+			</span>
+			<br/><br/>
+			<div class="progress progress-striped">
+		    	<div class="bar bar-warning" style="width: 100%;"></div>
+		    </div>
+		</div>
 	</div>
     <?php
 		} 
 	?>
-	<br/><br/>
+	<br/>
 	<?php	
 		if(isset($user->groups[8]) || isset($user->groups[7])){?>
-			<div class="jema_article_creator">
+			<div class="jema_article_creator pagination-centered">
 				Bonjour Administrateur, Veux tu créer un nouvel article ?<br/>
 				<span class="btn btn-success jema_display_creator">
 					Création article

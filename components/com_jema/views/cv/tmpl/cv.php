@@ -9,6 +9,5 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 ?>
 
 	<h2 class="jema_view_title">Developpement: </h2>
-		<img src="images/images_jema/cv_jb.jpg" class="img-polaroid jema_img_cv"/>
-	</div>
+		<img src="images/images_jema/cv_jb.jpg" class="jema_img_cv"/>
 </div>

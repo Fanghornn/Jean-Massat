@@ -3,9 +3,7 @@
 .jema_link_menu{border-bottom: 1px solid rgb(209, 209, 209);}
 .jema_btn{transition: margin-left 0.3s; margin-left:-9em; border-top:solid grey .2em; border-bottom:solid grey .2em; padding-top:1em; padding-bottom:1em; display:inline-block; width:12em; font-family:Loaded; background:#313739; color:white; text-align:center;}
 .jema_btn:hover{color:white;}
-.jema_menu_classic{border: 0.1em solid grey;background:white; box-shadow: .2em .1em .8em .1em; height:auto; max-height:3em; max-width:37em; padding:1em; border-radius: .2em;}
-.jema_menu_classic_btn{margin-left:2em; }
-.jema_cadre_profil {box-shadow: .2em .2em .9em .2em; background:white; width: 21em; position:relative; height: 45em; padding-top:1em; padding-left:1em; padding-right:1em; top:-1.5em; left:-18.5em;}
+.jema_cadre_profil {box-shadow: .2em .2em .9em .2em; background:white; width: 21em; position:relative; height: 45em; padding-top:1em; padding-left:1em; padding-right:1em; top:-1.5em; left:85%;}
 .jema_cadre_profil_pic{padding:3.6em;}
 .jema_cadre_profil_infos{text-align:center; font-weight:bold; font-size:1.05em;}
 .jema_toggle_classic_menu{transition: opacity 1s; left: 1em; position: relative; background: none repeat scroll 0% 0% rgb(49, 55, 57); color:white; border: 0.2em solid grey; text-align:center; font-family:Loaded; font-size:1.3em; top:-2em;}
@@ -16,7 +14,7 @@
 .jema_icon_about{margin-left:-1em;}
 .jema_menu_btn_slide{font-size:3em; top:-3.7em; position:relative; left:4.07em;}
 /* ////////////////// */
-.jema_content{font-family: Tahoma, Verdana, Segoe, sans-serif; background: white; width:auto; max-width:65em; min-height:80%; border:solid .1em grey; border-radius:.2em; padding:3em; text-align:justify; line-height: 200%; position:absolute; top:8em;}
+.jema_content{font-family: Tahoma, Verdana, Segoe, sans-serif; background: white; width:auto; max-width:65em; min-height:80%; border:solid .1em grey; border-radius:.2em .2em .2em .2em; line-height: 200%; position:absolute; top:8em; box-shadow: 0em 0em 1.3em .3em;}
 .jema_view_title{font-family: Loaded; width:16em;}
 .jema_hidden{visibility:hidden; display:none;}
 ::selection{background:#386F48; color:white;}

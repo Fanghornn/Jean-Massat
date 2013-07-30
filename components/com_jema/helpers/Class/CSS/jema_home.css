@@ -1,2 +1,4 @@
-.jema_home_img{width: 17em; float:left; margin-left:-1em; margin-top:-3em; padding-right:2em;}
+.jema_home{padding-left: 3em; padding-right: 2em; text-align: justify;}
+.jema_home_img{width: 17em; float:left; margin-left:-1em; margin-top:-3em;}
+.jema_paragraph_welcome{padding-right:.7em; padding-left:2.5em;}
 .jema_paragraph_welcome:first-letter{padding-left:4em;}

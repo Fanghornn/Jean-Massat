@@ -1,6 +1,20 @@
 window.addEvent('domready', function() {
-    var detectRoot = (document.getElement('.jema_article_creator'));
-    if(detectRoot==null){}else{display();}
+    var detectRoot = document.getElement('.jema_article_creator');
+
+    if(detectRoot==null){}
+    else{
+    	var btnsDelete = document.getElements('.jema_delete_article');
+
+    	btnsDelete.forEach(function(btnDel){
+    		var article = btnDel.getParent('.jema_article');
+    		btnDel.addEvent('click', function(){
+    			var dataArticle = article.getAttribute('data-article');
+    			console.log(dataArticle);
+    		});
+    		
+    	});
+    	display();
+    }
 });
 
 function display(){
