@@ -31,8 +31,7 @@ var BorderMenu = new Class({
 		}
 	}
 	,inanimateButton: function(el, name, scrollAway){
-		var self = this;
-			var resuractedIcon = new Element('i', {class:'icon-fast-forward jema_icon_menu jema_icon_'+name});
+			var resuractedIcon = new Element('i', {'class':'icon-fast-forward jema_icon_menu jema_icon_'+name});
 
 		if(scrollAway){
 			el.setStyle('margin-left', '-9em');
