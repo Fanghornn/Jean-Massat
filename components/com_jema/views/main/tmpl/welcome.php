@@ -13,13 +13,35 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 
 	<br/>
 	<div class="jema_home">
-		<img class="jema_home_img" src="/jean-massat/images/images_jema/triforce.png"/>
+		<div class="jema_newsfeed_displayer_container">
+		<span class="jema_newsfeed_displayer_title">
+				Quoi de neuf sur le blog ?
+		</span>
+			<div class="jema_newsfeed_displayer">
+				<ul>
+					<?php  
+						$newsFeed = articlesController::getNewsFeed();
+						foreach($newsFeed as $row){		
+					?>
+						<i class="icon-tag"></i>
+						<span>
+							<?php echo $row['titre_article']; ?> <br/>
+							<?php echo $row['date_creation']; ?> 
+						</span>
+						<br/>
+					<?php
+						}
+					?>
+				</ul>
+			</div>
+		</div>
+		<br/>
 		<p class="jema_paragraph_welcome">
 			J'ai développé ce site dans un premier temps afin de perfectionner mes connaissances de développement 
 			acquises durant ma formation de développeur logiciel.<br/><br/>
 
 			Outre le fait de perfectionner mes compétences, ce site est pour moi l'occasion de disposer d'un blog, ce dernier, ayant principalement pour but
-			de partager ma passion du développement, internet et de l'informatique en général.<br/><br/>
+			de partager ma passion du développement, internet et de l'informatique en général.<br/><br/><br/>
 
 			Dans la partie Développement du site, se trouvera mon C.V. et mes différents travaux de développement, nottament sur les informations et les
 			détails techniques du développement de ce site.<br/><br/>

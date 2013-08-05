@@ -1,4 +1,7 @@
 .jema_home{padding-left: 3em; padding-right: 2em; text-align: justify;}
-.jema_home_img{width: 17em; float:left; margin-left:-1em; margin-top:-3em;}
+.jema_home_img{width: 19em; margin-left:2em; margin-top:-1em;}
 .jema_paragraph_welcome{padding-right:.7em; padding-left:2.5em;}
 .jema_paragraph_welcome:first-letter{padding-left:4em;}
+.jema_newsfeed_displayer_container{float:right;  padding-top: .8em; padding-right: 1.5em; padding-left: 2em; width: 19em; top: -2em; left: 1em; position: relative;}
+.jema_newsfeed_displayer_title{ font-weight: bold; display:block; text-align: center;}
+.jema_newsfeed_displayer{border-top: .2em solid darkgrey ; border-bottom: .2em solid darkgrey ; }
