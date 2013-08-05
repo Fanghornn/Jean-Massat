@@ -7,12 +7,27 @@
 defined('_JEXEC') or die('Not that way');
 require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.php');
 ?>
-
-
-	<h2 class="jema_view_title">Le blog de Fanghornn</h2>
+	<br/>
 	<?php 
 		$user = JFactory::getUser();
-		$dbresponse = JemaModelMain::getArticle();
+		$count_article = articlesController::getCountArticle();
+		$nb_article = 7;
+		$nb_page = ceil($count_article/$nb_article);
+		$get_page = JRequest::getVar('page');
+
+		if(isset($get_page)){
+			$page = intval(JRequest::getVar('page'));
+
+			if($page>$nb_page){
+				$page=$nb_page;
+			}
+		}
+		else{
+			$page=1;
+		}
+
+		$firstEntry = ($page-1)*$nb_article;
+		$dbresponse = JemaModelMain::getArticles($firstEntry, $nb_article);
 		foreach ($dbresponse as $row){
 	?>
 	<div class="jema_article" data-article="<?php echo $row["id_article"]; ?>">
@@ -36,7 +51,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 			<button class="btn btn-small btn-danger jema_delete_article">
 				Supprimer l'article
 			</button>
-			<button class="btn btn-small btn-warning">
+			<button class="btn btn-small btn-warning jema_btn_edit">
 					Editer l'article
 			</button>
 			<br/>
@@ -55,6 +70,34 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
     <?php
 		} 
 	?>
+	<br/>
+	<div class="pagination">
+		<ul>
+			<?php 
+				if($page>1){
+			?>
+				<li><a href="/jean-massat/index.php/blog?page=<?php echo $page-1 ?>"><</a></li>
+			<?php
+				}
+				for($i=1; $i<=$nb_page; $i++){
+					if($i==$page){
+			?>
+				<li class="disabled"><a><?php echo "$i"; ?></a></li>
+			<?php
+					}else{
+			?>
+				<li><a href="/jean-massat/index.php/blog?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+			<?php
+					}
+				}
+				if(($page)!=$nb_page){
+			 ?>
+			 	<li><a href="/jean-massat/index.php/blog?page=<?php echo $page+1 ?>">Suiv.</a></li>
+			 <?php 
+			 	} 
+			 ?>
+		</ul>
+	</div> 
 	<br/>
 	<?php	
 		if(isset($user->groups[8]) || isset($user->groups[7])){?>

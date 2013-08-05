@@ -4,16 +4,26 @@ window.addEvent('domready', function() {
     if(detectRoot==null){}
     else{
     	var btnsDelete = document.getElements('.jema_delete_article');
+        var btnsModify = document.getElements('.jema_btn_edit');
 
     	btnsDelete.forEach(function(btnDel){
     		var article = btnDel.getParent('.jema_article');
     		btnDel.addEvent('click', function(){
     			var dataArticle = article.getAttribute('data-article');
-    			console.log(dataArticle);
+    			var requestDel = new Request({
+                    data: { 'id':dataArticle },
+                    url: 'index.php?option=com_jema&format=raw&task=deleteArticle',
+                    onComplete: function(){
+                        var deleteMagicDiv = new Element('div', {'class':'jema_article_deleted', 'html':'La suppresion de l\'article est réussie'});
+
+                        article.empty();
+                        article.grab(deleteMagicDiv);
+                    }
+                }).send();
     		});
     		
     	});
-    	display();
+        display();
     }
 });
 
