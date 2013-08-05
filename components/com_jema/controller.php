@@ -59,5 +59,9 @@ class JemaController extends JControllerLegacy {
 		JRequest::setvar('layout', 'blog');
 		parent::display($cachable = false, $urlparams = array());
 	}
+
+	public function deleteArticle(){
+		articlesController::deleteArticle();
+	}
  }	  
 ?>
