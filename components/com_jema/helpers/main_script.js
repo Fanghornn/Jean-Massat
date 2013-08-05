@@ -1,7 +1,5 @@
 window.onload = function(){
 	window.scrollTo(0,0);
-	setCdrContent();
-
 	if(document.getElement('.jema_mobile_menu_btn_container')){
 		var mobileMenu = document.getElement('.jema_mobile_menu_btn'),
 		links = document.getElements('.jema_mobile_menu_links'),
@@ -51,14 +49,11 @@ window.onload = function(){
 function setCdrContent(){
 	var jemaContent = document.getElement('.jema_content'),
 	jemaCadreProfil = document.getElement('.jema_cadre_profil'),
-	windowSize = window.getSize(),
-	widthCalculated = ((windowSize.x)-200);
+	windowSize = window.getSize();
 
-	if((windowSize.x>1200)){
-		jemaContent.setStyle('width', widthCalculated);
+	if((windowSize.x>800)){
 		jemaCadreProfil.removeClass('jema_hidden');
 	}else{
-		jemaContent.setStyle('width', (windowSize.x)-50);
 		jemaCadreProfil.addClass('jema_hidden');
 	}
 }
