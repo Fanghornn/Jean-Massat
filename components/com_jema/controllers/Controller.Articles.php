@@ -14,6 +14,40 @@ class articlesController{
 	/* Retourne la date du jour au format sql */
 	public static function today(){ return date('Y-m-d'); }
 
+	public static function getCountArticle(){
+		$db = JFactory::getDBO();
+		$query = "SELECT COUNT(*) FROM `#__jema_articles`;";
+		$db->setQuery($query);
+		$db->execute();
+		$count = $db->loadResult();
+
+		return $count;
+	}
+
+	public static function getNewsFeed(){
+		$db = JFactory::getDBO();
+		$query = "SELECT `id_article`, `titre_article`, `date_creation` FROM `#__jema_articles` ORDER BY `id_article` DESC LIMIT 4 ;";
+		$db->setQuery($query);
+		$rows = $db->loadAssocList();
+
+		return $rows;
+	}
+
+	public static function deleteArticle(){
+		$id = JRequest::getVar('id');
+		$db = JFactory::getDBO();
+
+		//Delete article
+		$query = "DELETE FROM `#__jema_articles` WHERE id_article=".$id.";";
+		$db->setQuery($query);
+		$db->execute();
+
+		//Delete associated image
+		$query = "DELETE FROM `#__jema_articles_images` WHERE id_article=".$id.";";
+		$db->setQuery($query);
+		$db->execute();
+	}
+
 	/**
 	  * Saving article and images
 	  * into DB for jema_database
