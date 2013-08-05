@@ -28,17 +28,10 @@ defined('_JEXEC') or die('Not that way');
 	<a class="jema_btn jema_btn_about" href="/jean-massat/index.php/about">.:: A propos ::.<i class="icon-fast-forward jema_icon_menu jema_icon_about"></i></a><br/>
 </div>
 <?php } ?>
-
+<div class="jema_content">
 	<div class="jema_cadre_profil jema_hidden">
-
-		<span class="jema_cadre_profil_pic">
-
-			<img src="/jean-massat/images/images_jema/gentlemen.jpg" width="200"/>
-
-		</span>
-
+		<img class="jema_cadre_profil_pic" src="/jean-massat/images/images_jema/gentlemen.jpg" width="200"/>
 		<br/>
-
 		<div class="jema_cadre_profil_infos">
 
 			<div>
@@ -58,9 +51,5 @@ defined('_JEXEC') or die('Not that way');
 				Mon profil Github: <iframe src="http://ghbtns.com/github-btn.html?user=Fanghornn&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="20"></iframe>
 				<br/><br/>
 			</div>
-			
 		</div>
-
 	</div>
-
-<div class="jema_content">
