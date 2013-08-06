@@ -27,7 +27,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		}
 
 		$firstEntry = ($page-1)*$nb_article;
-		$dbresponse = JemaModelMain::getArticles($firstEntry, $nb_article);
+		$dbresponse = articlesController::getArticles($firstEntry, $nb_article);
 		foreach ($dbresponse as $row){
 	?>
 	<div class="jema_article" data-article="<?php echo $row["id_article"]; ?>">
