@@ -76,27 +76,29 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 	<div class="pagination">
 		<ul>
 			<?php 
-				if($page>1){
+				if(!empty($dbresponse)){ 
+					if($page>1){
 			?>
-				<li><a href="/jean-massat/index.php/blog?page=<?php echo $page-1 ?>"><</a></li>
-			<?php
-				}
-				for($i=1; $i<=$nb_page; $i++){
-					if($i==$page){
-			?>
-				<li class="disabled"><a><?php echo "$i"; ?></a></li>
-			<?php
-					}else{
-			?>
-				<li><a href="/jean-massat/index.php/blog?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+					<li><a href="/jean-massat/index.php/blog?page=<?php echo $page-1 ?>"><</a></li>
 			<?php
 					}
-				}
-				if(($page)!=$nb_page){
+					for($i=1; $i<=$nb_page; $i++){
+						if($i==$page){
+			?>
+							<li class="disabled"><a><?php echo "$i"; ?></a></li>
+			<?php
+						}else{
+			?>
+							<li><a href="/jean-massat/index.php/blog?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+			<?php
+						}
+					}
+					if(($page)!=$nb_page){
 			 ?>
-			 	<li><a href="/jean-massat/index.php/blog?page=<?php echo $page+1 ?>">Suiv.</a></li>
+			 			<li><a href="/jean-massat/index.php/blog?page=<?php echo $page+1 ?>">Suiv.</a></li>
 			 <?php 
-			 	} 
+			 		} 
+			 	}
 			 ?>
 		</ul>
 	</div> 
