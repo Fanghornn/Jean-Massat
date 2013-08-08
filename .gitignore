@@ -406,6 +406,7 @@ tmp/*
 bin/*
 cli/*
 images/*
+!images/images_jema
 layouts/*
 language/*
 plugins/*
