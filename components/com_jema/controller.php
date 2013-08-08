@@ -55,8 +55,14 @@ class JemaController extends JControllerLegacy {
 	public function saveArticle(){
 		articlesController::saveArticle();
 
-		JRequest::setvar('view', 'blog');
-		JRequest::setvar('layout', 'blog');
+		JRequest::setVar('view', 'blog');
+		JRequest::setVar('layout', 'blog');
+		parent::display($cachable = false, $urlparams = array());
+	}
+
+	public function article(){
+		JRequest::setVar('view', 'article');
+		JRequest::setVar('layout', 'article');
 		parent::display($cachable = false, $urlparams = array());
 	}
 

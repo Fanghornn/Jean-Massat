@@ -7,7 +7,6 @@
 defined('_JEXEC') or die('Not that way');
 require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.php');
 ?>
-	<br/>
 	<?php 
 		$user = JFactory::getUser();
 		$count_article = articlesController::getCountArticle();
@@ -30,10 +29,13 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		$dbresponse = articlesController::getArticles($firstEntry, $nb_article);
 		foreach ($dbresponse as $row){
 	?>
+	<br/>
 	<div class="jema_article" data-article="<?php echo $row["id_article"]; ?>">
-		<span class="jema_article_title">
-				<?php echo $row["titre_article"]; ?>
-		</span>
+		<a href="/jean-massat/index.php/article?id_article=<?php echo $row["id_article"]; ?>">
+			<span class="jema_article_title">
+					<?php echo $row["titre_article"]; ?>
+			</span>
+		</a>
 		<?php if($row["img_src"]!=null){ ?>
 		<br/>
 		<span class="pagination-centered">

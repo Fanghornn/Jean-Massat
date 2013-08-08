@@ -8,7 +8,7 @@ var BorderMenu = new Class({
 		var self = this,
 		cadreMenu = document.getElement('.jema_cadre_menu'),
 		btnArr = self.getLinksItems(),
-		btnClassNameArr = new Array('home', 'blog', 'cv', 'about');
+		btnClassNameArr = new Array('home', 'blog', 'cv', 'dev', 'about');
 
 		btnArr.forEach(function(btn, i){
 			self.inanimateButton(btn, btnClassNameArr[i], false);
@@ -48,8 +48,9 @@ var BorderMenu = new Class({
 		btnHome = document.getElement('.jema_btn_home'),
 		btnBlog = document.getElement('.jema_btn_blog'),
 		btnCv = document.getElement('.jema_btn_cv'),
+		btnDev = document.getElement('.jema_btn_dev'),
 		btnAbout = document.getElement('.jema_btn_about'),
-		btnArr = new Array(btnHome, btnBlog, btnCv, btnAbout);
+		btnArr = new Array(btnHome, btnBlog, btnCv, btnDev, btnAbout);
 
 		return btnArr;
 	}
@@ -67,7 +68,7 @@ var BorderMenu = new Class({
 	}
 	,scrollingAway: function(arrEl){
 		var self = this,
-		btnClassNameArrScroll = new Array('home', 'blog', 'cv', 'about');
+		btnClassNameArrScroll = new Array('home', 'blog', 'cv', 'dev', 'about');
 
 		if(document.getElement('.jema_toggle_classic_menu'))document.getElement('.jema_toggle_classic_menu').setStyle('opacity', '0');
 		arrEl.forEach(function(btn, i){

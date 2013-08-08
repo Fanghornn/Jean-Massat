@@ -44,6 +44,17 @@ class articlesController{
 		return $rows;
 	}
 
+	public static function getArticle($id){
+		$db = JFactory::getDBO();
+		$query = "SELECT a.`id_article`, `titre_article`, `content_article`, `img_src`, `date_creation`";
+		$query .= " FROM `#__jema_articles` AS a LEFT JOIN `#__jema_articles_images` AS i ON i.id_article = a.id_article";
+		$query .= " WHERE a.id_article=".$id.";";
+		$db->setQuery($query);
+		$row = $db->loadAssocList();
+
+		return $row;
+	}
+
 	public static function deleteArticle(){
 		$id = JRequest::getVar('id');
 		$db = JFactory::getDBO();
