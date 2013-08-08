@@ -26,7 +26,7 @@ class articlesController{
 
 	public static function getNewsFeed(){
 		$db = JFactory::getDBO();
-		$query = "SELECT `id_article`, `titre_article`, `date_creation` FROM `#__jema_articles` ORDER BY `id_article` DESC LIMIT 4 ;";
+		$query = "SELECT `id_article`, `titre_article`, DATE_FORMAT(`date_creation`, '%d/%m/%Y') AS date_creation FROM `#__jema_articles` ORDER BY `id_article` DESC LIMIT 4 ;";
 		$db->setQuery($query);
 		$rows = $db->loadAssocList();
 
@@ -35,7 +35,7 @@ class articlesController{
 
 	public static function getArticles($firstEntry, $nb_rows){
 		$db = JFactory::getDBO();
-		$query = "	SELECT a.`id_article` , `titre_article` , `content_article` , `img_src` , `date_creation`
+		$query = "	SELECT a.`id_article` , `titre_article` , `content_article` , `img_src` , DATE_FORMAT(`date_creation`, '%d/%m/%Y') AS date_creation
 					FROM `#__jema_articles` AS a
 					LEFT JOIN `#__jema_articles_images` AS i ON i.id_article = a.id_article
 					ORDER BY a.id_article DESC LIMIT ".$firstEntry.",".$nb_rows.";";
