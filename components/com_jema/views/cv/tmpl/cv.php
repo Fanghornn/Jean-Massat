@@ -19,25 +19,24 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		Les API CSS de BootStrap et Gantry qui sont des framework CSS open-source, m'ont permis de mettre en place le design général du site.<br/>
 
 		Si vous consultez ce site depuis un mobile ou une tablette, vous pouvez constatez que j'ai fais en sorte de changer des éléments d'affichage
-		afin d'obtenir un affichage propre et épuré sur les petites résolutions. Etant plutôt jeune, je sais que la navigation sur smartphone se fais de plus en plus,
+		afin d'obtenir un affichage propre et épuré sur les petites résolutions. Etant plutôt jeune, je sais que la navigation sur smartphones se fait de plus en plus,
 		de plus, les gens sont souvent agacés lorsqu'ils arrivent sur un site qui n'a rien prévu pour leur appreil. C'est pourquoi j'ai soigné l'adaptation aux terminaux mobiles<br/>
 
 		Après avoir appris à maitriser le framework JavaScript Mootools et sa structure orientée objets lors de mon stage de formation, je l'ai naturellement mis en oeuvre
 		lors de la concéption du JavaScript de Jean-Massat. Le menu de navigation du site (aussi bien desktop que mobile), est une class Mootools que j'ai entiérement développé.<br/>
 
 		Outre l'utilisation de fonction de Framework libres, JS ou PHP, j'ai écris manuellement l'intégralité du code de Jean-Massat. Le code source est libre et disponible sur
-		Github, un simple click de votre part sur le titre de cet article vous amennera sur sa page :). 
+		Github, un simple click de votre part sur le titre de ce projet vous amennera sur son <a href="https://github.com/jean-massat/Jean-Massat" target="about:blank">repository</a> :). 
 	</p>
 
 	<h2 class="jema_cv_subtitle"><a href="https://github.com/art-manager/art-manager?source=cc" target="about:blank">Art-Manager (2013)</a></h3>
 	<p class="jema_cv_p">
 		C'est dans le cadre d'un stage de 10 semaines au cours de ma formation de développeur logiciels que j'ai pu participer au projet Art-Manager.
-		bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla 
-		bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla 
-		bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla 
-		bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla bllabla 
+		<br/><br/>
+		<a href="/jean-massat/images/images_jema/Rapport_de_stage-Jean Baptiste_Priam_Massat-Art Manager.pdf">Visionner mon rapport de stage</a> (pdf)<br/><br/>
+		Art-Manager posséde aussi un <a href="https://github.com/art-manager/art-manager?source=cc" target="about:blank">repository github</a>.
 	</p>
 
 	<h1 class="jema_cv_title">Curriculum Vitae</h2>
-	<img src="images/images_jema/cv_jb.jpg" class="jema_img_cv"/>
+	<a href="/jean-massat/images/images_jema/cv_jb.jpg" target="about:blank"><img src="images/images_jema/cv_jb.jpg" class="jema_img_cv"/></a>
 </div>

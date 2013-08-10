@@ -53,9 +53,6 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 			<button class="btn btn-small btn-danger jema_delete_article">
 				Supprimer l'article
 			</button>
-			<button class="btn btn-small btn-warning jema_btn_edit">
-					Editer l'article
-			</button>
 			<br/>
 				<?php 
 					}
@@ -121,7 +118,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 					<label>Image représentant l'article (facultatif)</label>
 						<input type="file" name="image_article" size="20"/>
 					<br/><br/>
-					<input type="submit" value="Envoyer!" class="btn btn-success"/>
+					<input type="submit" value="Envoyer!" class="btn btn-success jema_article_send"/>
 				</form>
 			</div>
 		<?php

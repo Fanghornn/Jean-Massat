@@ -4,7 +4,6 @@ window.addEvent('domready', function() {
     if(detectRoot==null){}
     else{
     	var btnsDelete = document.getElements('.jema_delete_article');
-        var btnsModify = document.getElements('.jema_btn_edit');
 
     	btnsDelete.forEach(function(btnDel){
     		var article = btnDel.getParent('.jema_article');
@@ -21,7 +20,6 @@ window.addEvent('domready', function() {
                     }
                 }).send();
     		});
-    		
     	});
         display();
     }
