@@ -40,9 +40,9 @@ class JemaController extends JControllerLegacy {
 		parent::display($cachable = false, $urlparams = array());
 	}
 
-	public function contact(){
-		JRequest::setVar('view', 'contact');
-		JRequest::setVar('layout', 'contact');
+	public function dev(){
+		JRequest::setVar('view', 'dev');
+		JRequest::setVar('layout', 'dev');
 		parent::display($cachable = false, $urlparams = array());
 	}
 
