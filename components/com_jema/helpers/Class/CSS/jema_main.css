@@ -15,7 +15,7 @@
 .jema_icon_about{margin-left:-1.2em;}
 .jema_menu_btn_slide{font-size:3em; top:-3.7em; position:relative; left:4.07em;}
 /* ////////////////// */
-.jema_content{font-family: Tahoma, Verdana, Segoe, sans-serif; background: white; width:90%; min-height:80%; border:solid .1em grey; border-radius:.2em .2em .2em .2em; line-height: 200%; position:absolute; top:1em; box-shadow: 0em 0em 1.3em .3em;}
+.jema_content{font-family: Tahoma, Verdana, Segoe, sans-serif; background: white; width:90%; min-height:58em; border:solid .1em grey; border-radius:.2em .2em .2em .2em; line-height: 200%; position:absolute; top:1em; box-shadow: 0em 0em 1.3em .3em;}
 .jema_view_title{}
 .jema_hidden{visibility:hidden; display:none;}
 .jema_ie_warning{position:fixed; top:3em; z-index:10001;}
