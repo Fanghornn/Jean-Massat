@@ -6,7 +6,7 @@
  */
  
 jimport('joomla.application.component.view');
-class JemaViewContact extends JViewLegacy{
+class JemaViewDev extends JViewLegacy{
 	
 	function display($tpl = null){
 		$mainframe = JFactory::getApplication();
@@ -17,7 +17,7 @@ class JemaViewContact extends JViewLegacy{
 		//personalliser la page (JDocument)
 		$document = JFactory::getDocument();
 		$sitename = $mainframe->getCfg('sitename');
-		$document->setTitle( $sitename.' - Blog' );
+		$document->setTitle( $sitename.' - Dev' );
 
 		//Main Script call
 		$document->addScript(JURI::root().'components/com_jema/helpers/main_script.js');
