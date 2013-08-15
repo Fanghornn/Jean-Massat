@@ -1,4 +1,12 @@
-window.addEvent('domready', function() {
+/**
+ * projet: JeanMassat | JEMA
+ * Author: Jean Baptiste PRIAM MASSAT
+ * @package Joomla.Site
+ * @Component com_jema
+ * @copyright Copyright © 2013, jean-massat.
+ * @license This software is under MIT licence.
+ */
+ window.addEvent('domready', function() {
     var detectRoot = document.getElement('.jema_article_creator');
 
     if(detectRoot==null){}
