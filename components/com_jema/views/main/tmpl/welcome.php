@@ -53,8 +53,8 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 
 		<h2 class="jema_home_titles"><a href="/jean-massat/index.php/cv">Mon C.V.</a></h2>
 		<p class="jema_home_p">
-			Mon C.V. de développeur et les différents projets sur lesquels j'ai travaillé s'y trouvent.<br/>
-			Des animations JavaScript rendant la page plus intérractive devraient voir le jour prochainement.
+			Les différents projets de développement auxquels j'ai pu participé sont listés sur cette page.<br/>
+			Mon C.V. s'y trouve aussi.
 		</p>
 
 		<h2 class="jema_home_titles"><a href="/jean-massat/index.php/dev">Développement</a></h2>
