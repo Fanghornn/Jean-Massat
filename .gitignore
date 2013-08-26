@@ -407,6 +407,7 @@ bin/*
 cli/*
 images/*
 !images/images_jema
+!images/fonts
 layouts/*
 language/*
 plugins/*
