@@ -11,7 +11,7 @@ MIT License
 
 The MIT License (MIT)
 
-Copyright (c) [2013] [jean-massat]
+Copyright (c) 2013 jean-massat
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -32,7 +32,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Outils
 ===========
-Langages utilisés: [CSS], [PHP], [JS], [MOOTOOLS].
+Langages utilisés: [HTML], [CSS], [PHP], [JS], [MOOTOOLS].
 
 Base de données: deux tables pour les articles et les commentaires du blog
 
@@ -57,9 +57,15 @@ Rajouter les liens de menu du composant dans la gestion des menu de l'interface 
 
 Tout le développement se fait dans components/com_jema au sein même du dossier root Joomla.
 
+Auteurs
+===========
+Développement : Jean Baptiste PRIAM MASSAT (jean.massat@gmail.com)
+Bannière Jean-Massat : Alice Torres (alice_064@hotmail.fr) Un grand merci à elle :p.
+
 Memo
 ===========
 
 Polices: 
 Loaded : http://www.dafont.com/fr/loaded.font
+
 
