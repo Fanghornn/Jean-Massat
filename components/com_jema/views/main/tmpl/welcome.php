@@ -34,10 +34,10 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 				</ul>
 			</div>
 		</div>
-		<h2><a href="/jean-massat/">Accueil</a></h2>
+		<h2 class="jema_home_titles"><a href="/jean-massat/">Accueil</a></h2><br/>
 		<p class="jema_paragraph_welcome">
 			J'ai créé ce site dans un premier temps afin de perfectionner mes connaissances de développement 
-			acquises durant ma formation de développeur logiciel. C'est nottement l'occasion de les prouver en les mettant en oeuvre.<br/>
+			acquises durant ma formation de développeur logiciel. C'est nottement l'occasion de les prouver en les mettant en oeuvre.<br/><br/>
 			Tous les informations de développement (Framework PHP, JS, CMS Joomla 3.1 etc...)concernant la création site en lui même,
 			sont relatées et expliquées dans la partie "Projets" de la séction : <a href="/jean-massat/index.php/cv">Mon C.V.</a> 
 
