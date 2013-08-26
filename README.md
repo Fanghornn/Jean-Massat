@@ -59,13 +59,15 @@ Tout le développement se fait dans components/com_jema au sein même du dossier
 
 Auteurs
 ===========
+
 Développement : Jean Baptiste PRIAM MASSAT (jean.massat@gmail.com)
+
 Bannière Jean-Massat : Alice Torres (alice_064@hotmail.fr) Un grand merci à elle :p.
 
-Memo
+Sources
 ===========
 
-Polices: 
-Loaded : http://www.dafont.com/fr/loaded.font
+Loaded Font : http://www.dafont.com/fr/loaded.font
+Icons : http://glyphicons.com/
 
 
