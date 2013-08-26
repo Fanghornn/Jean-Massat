@@ -12,7 +12,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 ?>
 	<h1 class="jema_cv_title">Projets</h1><br/>
 
-	<h2 class="jema_cv_subtitle"><a href="https://github.com/jean-massat/Jean-Massat" target="about:blank">Jean Massat (2013)</a></h3>
+	<h2 class="jema_cv_subtitle"><a class="jema_cv_title_border" href="https://github.com/jean-massat/Jean-Massat" target="about:blank">Jean Massat (2013)</a></h3>
 	<p class="jema_cv_p">
 		Jean-Massat est le site sur lequel vous vous trouvez actuellement. Il m'aura fallu un mois entier environ avant de le mettre au point avec la quasi totalité
 		des composantes et fonctionnalités prévues initialements.<br/>
@@ -38,12 +38,14 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		<strong>ps: Le MVC se trouve dans components/com_jema/ pour ceux qui ne connaissent pas Joomla.</strong>
 	</p>
 <br/><br/>
-	<h2 class="jema_cv_subtitle"><a href="https://github.com/art-manager/art-manager?source=cc" target="about:blank">Art-Manager (2013)</a></h2>
+	<h2 class="jema_cv_subtitle">Art-Manager (2013)</h2>
 	<p class="jema_cv_p">
 		C'est dans le cadre d'un stage de 10 semaines au cours de ma formation de développeur logiciels que j'ai pu participer au projet Art-Manager.<br/>
 		<a href ="https://github.com/alain-andre" target="about:blank"><strong>M. ANDRE Alain (auteur du projet)</strong></a>m'a en effet encadré pendant deux mois durant ce stage.<br/><br/>
 		Principalement, j'ai pu apprendre à maitriser le Mootools en conçevant des petites applications mais aussi arriver à maitriser la notions d'objets en PHP et JS.<br/>
-		Apprendre à lire et me servir des documentations et API diverses(php, mootools, html, JavaScript).<br/>Utiliser des outils de versionning (git+github).<br/><br/>
+		Apprendre à lire et me servir des documentations et API diverses(php, mootools, html, JavaScript).<br/>
+		Maitriser la programmation orienté objet en PHP et JS.<br/>
+		Utiliser des outils de versionning (git+github).<br/><br/>
 		Codes et Algorithmes:<br/>
 	</p>
 		<ul class="jema_list">
@@ -71,9 +73,10 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 				</ul>
 			</li>
 		</ul>
-		<p class="jema_cv_p_end">
-			Tout le reste de mes contributions, sont des commits issus de mon compte Github, donc vous pouvez tous les retrouver en allant sur le 
-			<a href="https://github.com/art-manager/art-manager?source=cc" target="about:blank">repository de Art-Manager</a>.<br/>
+		<p class="jema_cv_p">
+			Tout le reste de mes contributions, sont des commits issus de mon compte Github, ils étaient tous présent sur mon compte mais j'ai du malheureusement
+			supprimer mon fork du repo de Art-Manager à la demande de M.Alain pour éviter qu'un investisseur reprenne le code source et impose une license dessus
+			ce qui est à mon avis tout à fait légitime, je vous donnerai donc un lien vers le site lorsque la beta test sera ouverte :).<br/><br/>
 			<a href="/jean-massat/images/images_jema/Rapport_de_stage-Jean Baptiste_Priam_Massat-Art Manager.pdf">Visionner mon rapport de stage</a> (pdf)<br/><br/>
 		</p>
 	<h1 class="jema_cv_title">Curriculum Vitae</h1>
