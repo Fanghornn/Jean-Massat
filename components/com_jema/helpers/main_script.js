@@ -32,8 +32,6 @@
 		loopBuster = true;
 		menu.scrollOnTop(menuLinks);
 
-		setCdrContent();
-
 		window.onscroll = function(){
 			var scrollValue = window.getScroll();
 
@@ -48,20 +46,5 @@
 				}
 			}
 		}
-		window.onresize = function(){
-			setCdrContent();
-		}
-	}
-}
-
-function setCdrContent(){
-	var jemaContent = document.getElement('.jema_content'),
-	jemaCadreProfil = document.getElement('.jema_cadre_profil'),
-	windowSize = window.getSize();
-
-	if((windowSize.x>800)){
-		jemaCadreProfil.removeClass('jema_hidden');
-	}else{
-		jemaCadreProfil.addClass('jema_hidden');
 	}
 }
