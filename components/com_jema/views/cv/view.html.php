@@ -29,12 +29,13 @@ class JemaViewCv extends JViewLegacy{
 		$document->addScript(JURI::root().'components/com_jema/helpers/Class/JS/border.menu.js');
 
 		//CSS calls
-		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_cv.css');
 		if(Jema::isMobile()){
 			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main_mobile.css');
+			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_cv_mobile.css');
 		}
 		else{
 			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main.css');
+			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_cv.css');
 		}
 
 		parent::display($tpl);

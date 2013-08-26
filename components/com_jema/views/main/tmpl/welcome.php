@@ -10,7 +10,6 @@
 defined('_JEXEC') or die('Not that way');
 require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.php');
 ?>
-	<br/><br/><br/>
 	<div class="jema_home">
 		<div class="jema_newsfeed_displayer_container">
 		<span class="jema_newsfeed_displayer_title">
@@ -40,7 +39,6 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 			acquises durant ma formation de développeur logiciel. C'est nottement l'occasion de les prouver en les mettant en oeuvre.<br/><br/>
 			Tous les informations de développement (Framework PHP, JS, CMS Joomla 3.1 etc...)concernant la création site en lui même,
 			sont relatées et expliquées dans la partie "Projets" de la séction : <a href="/jean-massat/index.php/cv">Mon C.V.</a> 
-
 		</p>
 
 		<h2 class="jema_home_titles"><a href="/jean-massat/index.php/blog">Blog</a></h2>

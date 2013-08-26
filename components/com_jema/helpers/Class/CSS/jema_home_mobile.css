@@ -1,0 +1,7 @@
+.jema_home{padding-left: .5em; padding-right: .5em;}
+.jema_paragraph_welcome{padding-right:.7em; padding-left:.5em; padding-bottom:1em;}
+.jema_home_p{ width:85%;}
+.jema_home_titles{text-align:left !important; font-weight:bold !important; width:15% !important; border-bottom:1px solid darkgrey !important;}
+.jema_newsfeed_displayer_container{float:right; padding-right: 1.5em; padding-left:4em; padding-top:2em; padding-bottom:2em; width: 19em; top: 0em; left: 1em; position: relative;}
+.jema_newsfeed_displayer_title{ font-weight: bold; display:block; text-align: center;}
+.jema_newsfeed_displayer{border-top: .2em solid darkgrey ; border-bottom: .2em solid darkgrey ; }

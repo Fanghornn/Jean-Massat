@@ -1,8 +1,9 @@
-.jema_cv_title{width:36% !important; padding-top:1.5em; padding-bottom:1em !important; padding-left:1em; text-align:left !important; border-bottom:1px solid rgb(48, 48, 48) !important; color:black !important; margin-left:0.8em; font-weight:none !important; font-size:1.7em;}
+.jema_cv_title{width:36% !important; padding-top:0.5em; padding-bottom:1em !important; padding-left:1em; text-align:left !important; border-bottom:1px solid rgb(48, 48, 48) !important; color:black !important; margin-left:0.8em; font-weight:none !important; font-size:1.7em;}
 .jema_cv_subtitle{text-align:left !important; padding-left: 2em; font-weight:bold !important; font-size:1.5em !important;}
 .jema_img_cv{position:relative; margin-left:auto; margin-right:auto; display:block; max-width:80%;}
-.jema_cv_p{padding-right:5.5em !important;}
+.jema_cv_p{padding-right:5.5em !important; text-align: justify;}
 .jema_cv_p_end{text-align:center;}
 .jema_list{margin-left:6em; margin-right:6em; text-align:justify;}
 .jema_cv_title_border{border-bottom:1.5px solid dodgerblue; padding-bottom: 0.3em;}
+.jema_project_separator{margin-left:3em; margin-right:3em;}
 p{padding-left:3em; text-align:justify;}

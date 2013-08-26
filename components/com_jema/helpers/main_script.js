@@ -10,6 +10,7 @@
 	window.scrollTo(0,0);
 	if(document.getElement('.jema_mobile_menu_btn_container')){
 		var mobileMenu = document.getElement('.jema_mobile_menu_btn'),
+		jemaContent = document.getElement('.jema_content'),
 		links = document.getElements('.jema_mobile_menu_links'),
 		touched = false;
 
@@ -17,11 +18,13 @@
 			if(touched==false){
 				links.forEach(function(link){
 					link.setStyle('margin-left', '-.2em');
+					jemaContent.setStyle('left', '10em');
 					touched = true;
 				});
 			}else{
 				links.forEach(function(link){
-					link.setStyle('margin-left', '-6.5em');
+					link.setStyle('margin-left', '-7.8em');
+					jemaContent.setStyle('left', '0em');
 					touched = false;
 				});
 			}

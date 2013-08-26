@@ -33,11 +33,14 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		il m'a donc permis d'attribuer une action à un evenement, permettant au menu d'avoir une animation d'effet de coulissement à l'evenement <strong>'mouseenter'</strong>(survol pointeur de la souris) sur un titre de menu.<br/>
 		<a href="https://github.com/jean-massat/Jean-Massat/blob/master/components/com_jema/helpers/Class/JS/border.menu.js" target="about:blank">(voir le code)</a><br/><br/>
 
-		Le code source est libre et disponible sur Github<br/>
+		Le code source est libre et disponible sur Github<br/><br/>
+		Je tiens particuliérement à remercier <a href="https://www.facebook.com/alice.crabiitorres?ref=ts&fref=ts">Alice Torres</a> (<a href="mailto:alice_064@hotmail.fr">alice_064@hotmail.fr</a>) pour son superbe travail quant à la bannière de ce site.<br/><br/>
 		Un simple click de votre part sur le titre de ce projet vous amennera sur son <a href="https://github.com/jean-massat/Jean-Massat" target="about:blank">repository</a>.<br/><br/>
 		<strong>ps: Le MVC se trouve dans components/com_jema/ pour ceux qui ne connaissent pas Joomla.</strong>
 	</p>
-<br/><br/>
+    <div class="progress progress-success progress-striped jema_project_separator">
+    	<div class="bar" style="width: 100%;"></div>
+    </div>
 	<h2 class="jema_cv_subtitle">Art-Manager (2013)</h2>
 	<p class="jema_cv_p">
 		C'est dans le cadre d'un stage de 10 semaines au cours de ma formation de développeur logiciels que j'ai pu participer au projet Art-Manager.<br/>
@@ -76,9 +79,12 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		<p class="jema_cv_p">
 			Tout le reste de mes contributions, sont des commits issus de mon compte Github, ils étaient tous présent sur mon compte mais j'ai du malheureusement
 			supprimer mon fork du repo de Art-Manager à la demande de M.Alain pour éviter qu'un investisseur reprenne le code source et impose une license dessus
-			ce qui est à mon avis tout à fait légitime, je vous donnerai donc un lien vers le site lorsque la beta test sera ouverte :).<br/><br/>
-			<a href="/jean-massat/images/images_jema/Rapport_de_stage-Jean Baptiste_Priam_Massat-Art Manager.pdf">Visionner mon rapport de stage</a> (pdf)<br/><br/>
+			ce qui est à mon avis tout à fait légitime, je vous donnerai donc un lien vers le site lorsque la beta test sera ouverte :).<br/>
+			<a href="/jean-massat/images/images_jema/Rapport_de_stage-Jean Baptiste_Priam_Massat-Art Manager.pdf">Visionner mon rapport de stage</a> (pdf)<br/>
 		</p>
+		<div class="progress progress-success progress-striped jema_project_separator">
+    		<div class="bar" style="width: 100%;"></div>
+    	</div>
 	<h1 class="jema_cv_title">Curriculum Vitae</h1>
 	<a href="/jean-massat/images/images_jema/cv_jb.jpg" target="about:blank"><img src="images/images_jema/cv_jb.jpg" class="jema_img_cv"/></a>
 </div>

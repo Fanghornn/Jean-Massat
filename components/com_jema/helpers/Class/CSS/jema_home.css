@@ -1,9 +1,8 @@
 .jema_home{padding-left: 3em; padding-right: 2em; text-align: justify;}
-.jema_home_img{width: 19em; margin-left:2em; margin-top:-1em;}
 .jema_paragraph_welcome{padding-right:.7em; padding-left:2.5em; padding-bottom:3em;}
 .jema_paragraph_welcome:first-letter{padding-left:4em;}
 .jema_home_p{padding-bottom:3em; width:85%; text-align:justify;}
-.jema_home_titles{text-align:left !important; font-weight:bold !important; width:15% !important; border-bottom:1px solid darkgrey !important;}
-.jema_newsfeed_displayer_container{float:right;  padding-top: .8em; padding-right: 1.5em; padding-left: 2em; width: 19em; top: -2em; left: 1em; position: relative;}
+.jema_home_titles{text-align:left !important; font-weight:bold !important; width:15% !important; border-bottom:1px solid darkgrey !important; padding-top:1em;}
+.jema_newsfeed_displayer_container{float:right;  padding-top: .8em; padding-right: 1.5em; padding-left: 2em; width: 19em; top: 1em; left: 1em; position: relative;}
 .jema_newsfeed_displayer_title{ font-weight: bold; display:block; text-align: center;}
 .jema_newsfeed_displayer{border-top: .2em solid darkgrey ; border-bottom: .2em solid darkgrey ; }

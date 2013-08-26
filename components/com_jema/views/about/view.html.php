@@ -30,6 +30,7 @@ class JemaViewAbout extends JViewLegacy{
 		//CSS calls
 		if(Jema::isMobile()){
 			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main_mobile.css');
+			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_about_mobile.css');
 		}
 		else{
 			$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/CSS/jema_main.css');

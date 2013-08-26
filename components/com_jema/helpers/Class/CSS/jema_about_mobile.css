@@ -1,0 +1,7 @@
+.jema_about_p{padding-left:.6em; padding-right:.5em; padding-right:.5em; padding-top:1em;}
+.jema_about_p:first-letter{padding-left: 1em; font-size: 1.5em}
+.jema_about_contact{text-align:center; padding-top:1em; padding-bottom:2em; font-weight:bold;}
+.jema_icon_envelope{font-size:1.3em;}
+.jema_about_barre{text-decoration: line-through; font-weight:bold;}
+.jema_about_img{float:left; width:10em; padding:2em 5em .8em 5em;}
+.jema_about_video{text-align:center; display:block; padding-top:3em; padding-bottom:3em;}
