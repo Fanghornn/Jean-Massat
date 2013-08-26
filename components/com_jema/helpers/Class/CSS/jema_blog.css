@@ -6,3 +6,4 @@
 .jema_form_article{text-align: center; font-weight: bold;}
 .jema_article_deleted{background: none repeat scroll 0% 0% orange; opacity: 0.7; border-radius: 0.2em 0.2em 0.2em 0.2em; text-align: center;}
 .jema_article_creator{margin-bottom:6em;}
+.jema_footer_article{padding-bottom:2em; font-weight:bold;}

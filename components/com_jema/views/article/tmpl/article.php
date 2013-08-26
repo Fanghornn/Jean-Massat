@@ -34,7 +34,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 				echo nl2br($row["content_article"]);	
 			?>
 		</p>
-		<div class="footer article">
+		<div class="jema_footer_article">
 			<span>
 				Posté le <?php echo $row["date_creation"] ?>
 			</span>
