@@ -1,12 +1,11 @@
 /* jema header styles */
-.jema_cadre_menu{transition: left 0.8s; width :2em; height:49%; top:3em; z-index: 1000; position: fixed; border-radius: .5em; padding-top:2em; padding-right:2em; left:-.2em; }
+@font-face {font-family: 'loadedregular'; src: url('/jean-massat/images/fonts/loaded-webfont.eot'); src: url('/jean-massat/images/fonts/loaded-webfont.eot?#iefix') format('embedded-opentype'), url('/jean-massat/images/fonts/loaded-webfont.woff') format('woff'), url('/jean-massat/images/fonts/loaded-webfont.ttf') format('truetype'), url('/jean-massat/images/fonts/loaded-webfont.svg#loadedregular') format('svg'); font-weight: normal; font-style: normal;}
+.jema_banner{position:relative; display:block; z-index:1001;}
+.jema_cadre_menu{transition: left 0.8s; width :2em; height:49%; top:3em; z-index: 1001; position: fixed; border-radius: .5em; padding-top:2em; padding-right:2em; left:-.2em; }
 .jema_link_menu{border-bottom: 1px solid rgb(209, 209, 209);}
-.jema_btn{transition: margin-left 0.3s; -webkit-transition: margin-left 0.3s; margin-left:-9em; border-top:solid grey .2em; border-bottom:solid grey .2em; padding-top:1em; padding-bottom:1em; display:inline-block; width:12em; font-family:Loaded; background:#313739; color:white; text-align:center;}
+.jema_btn{transition: margin-left 0.3s; -webkit-transition: margin-left 0.3s; margin-left:-9em; border-top:solid grey .2em; border-bottom:solid grey .2em; padding-top:1em; padding-bottom:1em; display:inline-block; width:12em; font-family:loadedregular; background:#313739; color:white; text-align:center;}
 .jema_btn:hover{color:white;}
-.jema_cadre_profil {box-shadow: .2em .2em .9em .2em; background:white; width: 25%; position:absolute; height: 45em; padding-top:1em; padding-left:1em; padding-right:1em; left:101%;}
-.jema_cadre_profil_pic{display:block; margin-left: auto; margin-right: auto; position: relative;}
-.jema_cadre_profil_infos{text-align:center; font-weight:bold; font-size:1.05em;}
-.jema_toggle_classic_menu{-webkit-transition: opacity 1s; transition: opacity 1s; left: 1em; position: relative; background: none repeat scroll 0% 0% rgb(49, 55, 57); color:white; border: 0.2em solid grey; text-align:center; font-family:Loaded; font-size:1.3em; top:-2em; width:7em;}
+.jema_toggle_classic_menu{-webkit-transition: opacity 1s; transition: opacity 1s; left: 1em; position: relative; background: none repeat scroll 0% 0% rgb(49, 55, 57); color:white; border: 0.2em solid grey; text-align:center; font-family:loadedregular; font-size:1.3em; top:-2em; width:7em;}
 /*jema icon styles*/
 .jema_icon_menu{padding-left:2em; font-size:1.2em;}
 .jema_icon_blog{margin-left: 1.3em;}
@@ -15,9 +14,7 @@
 .jema_icon_about{margin-left:-1.2em;}
 .jema_menu_btn_slide{font-size:3em; top:-3.7em; position:relative; left:4.07em;}
 /* ////////////////// */
-.jema_content{font-family: Tahoma, Verdana, Segoe, sans-serif; background: white; width:90%; min-height:58em; border:solid .1em grey; border-radius:.2em .2em .2em .2em; line-height: 200%; position:absolute; top:1em; box-shadow: 0em 0em 1.3em .3em;}
-.jema_view_title{}
+.jema_content{font-family: Tahoma, Verdana, Segoe, sans-serif; background: white; min-height:58em; border:solid .1em grey; border-radius:.2em .2em .2em .2em; line-height: 200%; position:relative; top:1em; box-shadow: 0em 0em 1.3em .3em;}
 .jema_hidden{visibility:hidden; display:none;}
-.jema_ie_warning{position:fixed; top:3em; z-index:10001;}
 ::selection{background:#386F48; color:white;}
 ::-moz-selection{background:#386F48; color:white;}
