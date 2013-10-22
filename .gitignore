@@ -424,4 +424,7 @@ modules/*
 configuration.php
 index.php
 joomla.xml
+robots.txt.dist
+administrator/.DS_Store
+administrator/language/.DS_Store
 *.txt
