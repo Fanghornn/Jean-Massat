@@ -1,6 +1,6 @@
 /* jema header styles */
 @font-face {font-family: 'loadedregular'; src: url('/jean-massat/images/fonts/loaded-webfont.eot'); src: url('/jean-massat/images/fonts/loaded-webfont.eot?#iefix') format('embedded-opentype'), url('/jean-massat/images/fonts/loaded-webfont.woff') format('woff'), url('/jean-massat/images/fonts/loaded-webfont.ttf') format('truetype'), url('/jean-massat/images/fonts/loaded-webfont.svg#loadedregular') format('svg'); font-weight: normal; font-style: normal;}
-.jema_banner{position:relative; display:block; z-index:1001;}
+.jema_banner{position:relative; display:block; z-index:1001; opacity:0.6; border-radius:.5em 5.5em .5em 5.5em;}
 .jema_cadre_menu{transition: left 0.8s; width :2em; height:49%; top:3em; z-index: 1001; position: fixed; border-radius: .5em; padding-top:2em; padding-right:2em; left:-.2em; }
 .jema_link_menu{border-bottom: 1px solid rgb(209, 209, 209);}
 .jema_btn{transition: margin-left 0.3s; -webkit-transition: margin-left 0.3s; margin-left:-9em; border-top:solid grey .2em; border-bottom:solid grey .2em; padding-top:1em; padding-bottom:1em; display:inline-block; width:12em; font-family:loadedregular; background:#313739; color:white; text-align:center;}
@@ -14,7 +14,7 @@
 .jema_icon_about{margin-left:-1.2em;}
 .jema_menu_btn_slide{font-size:3em; top:-3.7em; position:relative; left:4.07em;}
 /* ////////////////// */
-.jema_content{font-family: Tahoma, Verdana, Segoe, sans-serif; background: white; min-height:58em; border:solid .1em grey; border-radius:.2em .2em .2em .2em; line-height: 200%; position:relative; top:1em; box-shadow: 0em 0em 1.3em .3em;}
+.jema_content{font-family: Tahoma, Verdana, Segoe, sans-serif; background: transparent; min-height:58em; line-height: 200%; position:relative; top:1em;}
 .jema_hidden{visibility:hidden; display:none;}
 ::selection{background:#386F48; color:white;}
 ::-moz-selection{background:#386F48; color:white;}
