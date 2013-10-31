@@ -34,39 +34,32 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 				</ul>
 			</div>
 		</div>
-		<h2 class="jema_home_titles"><a href="/jean-massat/">Accueil</a></h2><br/>
-		<p class="jema_paragraph_welcome">
+		<h2 class="jema_home_titles"><a href="/jean-massat/">Accueil</a></h2>
 			J'ai créé ce site dans un premier temps afin de perfectionner mes connaissances de développement 
-			acquises durant ma formation de développeur logiciel. C'est notamment l'occasion de les prouver en les mettant en oeuvre.<br/><br/>
+			acquises durant ma formation de développeur logiciel. C'est notamment l'occasion de les prouver en les mettant en oeuvre.
 			Toutes les informations de développement (Framework PHP, JS, CMS Joomla 3.1 etc...)concernant la création du site en lui-même,
 			sont relatées et expliquées dans la partie "Projets" de la section : <a href="/jean-massat/index.php/cv">mon C.V.</a> 
 		</p>
 
 		<h2 class="jema_home_titles"><a href="/jean-massat/index.php/blog">Blog</a></h2>
 		<p class="jema_home_p">
-			Tout ce qu'il y a de plus banal sur internet, un blog personnel où je vous ferai part ds ma passion pour l'informatique, que ce soit la découverte d'un logicel,
-			la promotion d'un autre (open-source de préférence).<br/>
+			Tout ce qu'il y a de plus banal sur internet, un blog personnel où je vous ferai part de ma passion pour l'informatique, comme la découverte d'un logiciel.<br/>
 			L'avancement de mes travaux ou mon apprentissage d'un langage informatique.<br/>
-			Quelques articles (pas beaucoup promis !) traitant de ma vie personnelle.
 		</p>
 
 		<h2 class="jema_home_titles"><a href="/jean-massat/index.php/cv">Mon C.V.</a></h2>
 		<p class="jema_home_p">
 			Les différents projets de développement auxquels j'ai pu participer sont listés sur cette page.<br/>
-			Mon C.V. s'y trouve aussi.<br/>
-			<strong>ps: faite très attention, un JavaScript écoute votre micro et fera exploser votre ordinateur si il détecte un rire provoqué par la vue de ma photo</strong>
 		</p>
 
 		<h2 class="jema_home_titles"><a href="/jean-massat/index.php/dev">Développement</a></h2>
 		<p class="jema_home_p">
 			Quoi de mieux que d'avoir son propre site pour tester du code ?<br/>
-			La page développement me servira de base de test pour autre algorithme et apprentissages de langages de programmation.
 		</p>
 
 		<h2 class="jema_home_titles"><a href="/jean-massat/index.php/about">À propos</a></h2>
 		<p class="jema_home_p">
 			Vous voulez en savoir plus sur celui qui se cache derrière le pseudonyme de Jean Massat ? c'est ici qu'il faut vous rendre !<br/>
-			(Attention j'y raconte beaucoup ma vie au risque de vous ennuyer)
 		</p>
 	</div>
 </div>

@@ -2,7 +2,7 @@ Jean-Massat
 ===========
 
 Jean-Massat est un projet de site personnel pour Jean-Baptiste PRIAM MASSAT.
-Un site personnel qui me permettra, principalement, de mettre en oeuvre mes connaissance en développements. Son aspect et ses composantes ne sont pas encore définis.
+Un site personnel qui me permettra, principalement, de mettre en oeuvre mes connaissance en développements.
 
 License
 ===========
@@ -44,9 +44,9 @@ Installation
 ===========
 Télécharger et décompresser une fraiche installation de Joomla 3.1 dans l'environement de travail.
 
-Faire un git init à la racine de l'environement de travail de Joomla.
+Télécharger sous forme d'archive le repo
 
-Récuperer le .zip du composant:
+Créer une archive avec les fichiers suivants:
 administrator/components/com_jema/*
 components/com_jema/*
 jema.xml
@@ -54,6 +54,8 @@ jema.xml
 Installer le composant à l'aide du gestionnaire d'extension de Joomla, une fois ce dernier configuré et operationnel et avec l'archive générée precedement.
 
 Rajouter les liens de menu du composant dans la gestion des menu de l'interface d'administration de Joomla.
+
+Pour les CSS de Gantry modifié, récuperer gantry-custom.css dans template/gantry/css/ puis le remettre au même emplacement sur votre environement de travail après avoir installé Gantry.
 
 Tout le développement se fait dans components/com_jema au sein même du dossier root Joomla.
 
