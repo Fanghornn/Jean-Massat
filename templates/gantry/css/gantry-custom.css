@@ -1,4 +1,5 @@
 body{background: url("../../../images/images_jema/noisy_net.png") repeat scroll transparent;}
-h1{color: darkgrey; font-weight: bold; padding-bottom: .2em; padding-left:2em; padding-top:1em; font-size: 1.85em; word-wrap:break-word;}
-h2{width:auto !important; border:none !important; padding:1em; padding-left:0em; padding-top:.2em; padding-bottom:.5em; text-align:center !important;}
-h3{border:none;}
+h1{color: rgb(255, 102, 0) !important; text-shadow:none !important; box-shadow: none !important; border:none !important; font-weight: bold; padding-bottom: .2em; padding-left:2em; padding-top:1em; font-size: 1.85em; word-wrap:break-word;}
+h2{color: rgb(255, 102, 0) !important; text-shadow:none !important; box-shadow: none !important; border:none !important; width:auto !important; border:none !important; padding:1em; padding-left:0em; padding-top:.2em; padding-bottom:.5em; text-align:center !important;}
+h3{color: rgb(255, 102, 0) !important; text-shadow:none !important; box-shadow: none !important; border:none !important;}
+a{color:none !important;}
