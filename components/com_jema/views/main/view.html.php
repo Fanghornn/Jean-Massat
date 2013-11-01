@@ -24,9 +24,13 @@ class JemaViewMain extends JViewLegacy{
 
 		//Main Script call
 		$document->addScript(JURI::root().'components/com_jema/helpers/main_script.js');
-		
-		//Script menu call
-		$document->addScript(JURI::root().'components/com_jema/helpers/Class/JS/border.menu.js');
+		$document->addScript(JURI::root().'components/com_jema/helpers/Class/JS/home.js');
+
+		//IconHoverEffects
+		$document->addScript(JURI::root().'components/com_jema/helpers/Class/IconHoverEffects/js/component.js');
+		$document->addScript(JURI::root().'components/com_jema/helpers/Class/IconHoverEffects/js/modernizr.custom.js');
+		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/IconHoverEffects/css/component.css');
+		$document->addStyleSheet(JURI::root().'components/com_jema/helpers/Class/IconHoverEffects/css/default.css');
 
 		//CSS calls
 		if(Jema::isMobile()){

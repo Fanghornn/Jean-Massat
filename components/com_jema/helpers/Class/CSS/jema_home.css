@@ -5,4 +5,9 @@
 .jema_home_titles{text-align:left !important; font-weight:bold !important; width:15% !important; border-bottom:1px solid darkgrey !important; padding-top:1em;}
 .jema_newsfeed_displayer_container{float:right;  padding-top: .8em; padding-right: 1.5em; padding-left: 2em; width: 19em; top: 1em; left: 1em; position: relative;}
 .jema_newsfeed_displayer_title{ font-weight: bold; display:block; text-align: center;}
-.jema_newsfeed_displayer{border-top: .2em solid darkgrey ; border-bottom: .2em solid darkgrey ; }
+.jema_newsfeed_displayer{border-top: .2em solid darkgrey ; border-bottom: .2em solid darkgrey ;}
+.jema_home_displayer{border-left:solid orange .3em; border-right:solid orange .3em; border-radius:1em; padding:3em; margin-top:2em; height:23em; font-size:120%;}
+.jema_slide_text_user{transition:all 1s ease 0s; position:relative; text-align:center; top:-2em; opacity:1;}
+.jema_slide_text_screen{transition:all 1s ease 0s; position:relative; top:-12em; opacity:0;}
+.jema_skills{margin-left:65px !important;}
+.jema_slide_text_star{transition:all 1s ease 0s; position:relative; opacity:0; top:-26em; text-align:center; font-size:1.3em;}

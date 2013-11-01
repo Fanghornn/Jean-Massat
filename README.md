@@ -55,9 +55,15 @@ Installer le composant à l'aide du gestionnaire d'extension de Joomla, une fois
 
 Rajouter les liens de menu du composant dans la gestion des menu de l'interface d'administration de Joomla.
 
+Tout le développement se fait dans components/com_jema au sein même du dossier root Joomla.
+
+
+Paramètres de Gantry
+===========
 Pour les CSS de Gantry modifié, récuperer gantry-custom.css dans template/gantry/css/ puis le remettre au même emplacement sur votre environement de travail après avoir installé Gantry.
 
-Tout le développement se fait dans components/com_jema au sein même du dossier root Joomla.
+Enlever le logo puis tous les affichages de features sauf le "To-top Scroller" et le placer dans mainbottom-a avec pour texte "<i class="icon-chevron-up"></i>"
+
 
 Auteurs
 ===========

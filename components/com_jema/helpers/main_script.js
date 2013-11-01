@@ -30,24 +30,70 @@
 			}
 		});
 	}else{
-		var menu = new BorderMenu(),
-		menuLinks = menu.getLinksItems(),
-		loopBuster = true;
-		menu.scrollOnTop(menuLinks);
+		var viewHome = document.getElement('.jema_home');
+		if(viewHome==null){
+			var menu = new BorderMenu(),
+			menuLinks = menu.getLinksItems(),
+			loopBuster = true;
+			menu.scrollOnTop(menuLinks);
 
-		window.onscroll = function(){
-			var scrollValue = window.getScroll();
+			window.onscroll = function(){
+				var scrollValue = window.getScroll();
 
-			if(scrollValue.y==0){
-				menu.scrollOnTop(menuLinks);
-				loopBuster=true;
-			}
-			else{
-				if(loopBuster){
-					loopBuster=false;
-					menu.scrollingAway(menuLinks);
+				if(scrollValue.y==0){
+					menu.scrollOnTop(menuLinks);
+					loopBuster=true;
+				}
+				else{
+					if(loopBuster){
+						loopBuster=false;
+						menu.scrollingAway(menuLinks);
+					}
 				}
 			}
+		}else{
+			var iconUser = document.getElement('.hi-icon-user'),
+ 			iconScreen = document.getElement('.hi-icon-screen'),
+ 			iconStar = document.getElement('.hi-icon-star'),
+ 			slideUser = document.getElement('.jema_slide_text_user'),
+ 			slideScreen = document.getElement('.jema_slide_text_screen'),
+ 			slideStar = document.getElement('.jema_slide_text_star'),
+ 			currentSlider = 'User',
+ 			lastSlided = slideUser,
+ 			divMenu = document.getElement('.jema_cadre_menu');
+
+ 			divMenu.addClass('jema_hidden');
+
+ 			iconUser.addEvent('mouseover', function(){
+ 				if(currentSlider=='User'){}
+ 				else{ 
+ 					lastSlided.setStyle('opacity', 0); 
+ 					slideUser.setStyle('opacity', 1);
+ 					currentSlider = 'User';
+ 					lastSlided = slideUser;
+ 				}
+ 			});
+
+ 			iconScreen.addEvent('mouseover', function(){
+ 				if(currentSlider=='Screen'){}
+ 				else{
+ 					lastSlided.setStyle('opacity', 0);  
+ 					slideScreen.setStyle('opacity', 1);
+ 					currentSlider= 'Screen';
+ 					lastSlided = slideScreen;
+ 				}
+
+ 			});
+
+ 			iconStar.addEvent('mouseover', function(){
+ 				if(currentSlider=='Star'){}
+ 				else{
+ 					lastSlided.setStyle('opacity', 0); 
+ 					slideStar.setStyle('opacity', 1);
+ 					currentSlider = 'Star';
+ 					lastSlided = slideStar;
+ 				}
+ 			});
 		}
 	}
 }
