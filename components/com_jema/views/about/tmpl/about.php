@@ -20,10 +20,6 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		Je suis aussi un adepte des univers dits 'Heroic Fantasy' et des RPG en général, durant mes années de bac, je dois avouer que j'ai pu passer des nuits entières à jouer à des MMORPG tels que World Of Warcraft.<br/>
 		Ne faisant jamais les choses à moitié, je faisais partie d'une guilde très haut niveau nommée "Hémoglobine" sur le royaume Chants éternels et c'est avec ces compagnons d'armes que j'ai pu me forger un réel esprit d'équipe.
 		Nous avons d'ailleurs obtenu le 20e kill mondial de Sindragosa en difficulté dite "HardMode".<br/><br/>
-		J'avais d'ailleurs l'habitude de confectionner des vidéos de promotions pour celle-ci. En apprenant à maitriser divers outils de montage vidéo comme "Sony Vegas", 
-		ou carrément en créant un serveur World Of Warcraft pour pouvoir placer des personnages non joueurs à certains endroits juste pour faire des prises de vue uniques !<br/>
-		Je vous propose donc tout naturellement d'en visionner une (<span class="jema_about_barre">comme ça j'aurais quelques vues en plus sur Youtube :D</span>)<br/><br/>
-		<span class="jema_about_video"><iframe width="640" height="360" src="//www.youtube.com/embed/d1J0bgi2pkk" frameborder="0" allowfullscreen></iframe></span><br/>
 		En sortant du lycée, j'avais envie d'aller plus loin en me lançant dans une formation de développeur logiciel qui était pour moi une dimension encore floue. Ce fut pour un moi une vraie révélation, une passion née d'une autre, pouvant satisfaire ma soif de connaissances et ma curiosité.<br/><br/>
 		J'ai eu la chance de faire un stage avec un développeur passionné qui aura su, outre le fait de m'apprendre beaucoup de techniques de développement(<a href="/jean-massat/index.php/cv">voir projet Art-Manager</a>)
 		, me montrer la bonne voie à suivre pour être un bon développeur, c'est-à-dire de toujours rester à l'affut des dernières avancées technologiques et de m'intéresser au monde de l'open source (qui les invente) 

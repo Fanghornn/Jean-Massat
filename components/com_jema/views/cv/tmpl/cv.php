@@ -10,9 +10,8 @@
 defined('_JEXEC') or die('Not that way');
 require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.php');
 ?>
-	<h1 class="jema_cv_title">Projets</h1><br/>
-
-	<h2 class="jema_cv_subtitle"><a class="jema_cv_title_border" href="https://github.com/jean-massat/Jean-Massat" target="about:blank">Jean Massat (2013)</a></h3>
+	<br/>
+	<h2 class="jema_cv_subtitle">Jean Massat (2013)</h3>
 	<p class="jema_cv_p">
 		Jean-Massat est le site sur lequel vous vous trouvez actuellement. Il m'aura fallu un mois entier environ avant de le mettre au point avec la quasi-totalité
 		des composantes et fonctionnalités prévues initialement.<br/>
@@ -38,10 +37,10 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		Un simple click de votre part sur le titre de ce projet vous dirigera sur son <a href="https://github.com/jean-massat/Jean-Massat" target="about:blank">repository</a>.<br/><br/>
 		ps: Le MVC se trouve dans components/com_jema/ pour ceux qui ne connaissent pas Joomla.
 	</p>
-    <div class="progress progress-success progress-striped jema_project_separator">
+    <div class="progress progress-warning progress-striped jema_project_separator">
     	<div class="bar" style="width: 100%;"></div>
     </div>
-	<h2 class="jema_cv_subtitle">Art-Manager (2013)</h2>
+	<h2 class="jema_cv_subtitle" style="padding-top:2em">Art-Manager (2013)</h2>
 	<p class="jema_cv_p">
 		C'est dans le cadre d'un stage de 10 semaines au cours de ma formation de développeur logiciel que j'ai pu participer au projet Art-Manager.<br/>
 		<a href ="https://github.com/alain-andre" target="about:blank"><strong>M. ANDRE Alain (auteur du projet)</strong></a>m'a en effet encadré pendant deux mois durant ce stage.<br/><br/>
@@ -76,13 +75,13 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 				</ul>
 			</li>
 		</ul>
-		<p class="jema_cv_p">
+		<p class="jema_cv_p" style="padding-bottom:2em">
 			Tout le reste de mes contributions, sont des commits issus de mon compte Github, ils étaient tous présent sur mon compte mais j'ai dû malheureusement
 			supprimer mon fork du repo de Art-Manager à la demande de M. Alain Andre pour éviter qu'un investisseur reprenne le code source et impose une licence dessus
 			ce qui est à mon avis tout à fait légitime, je vous donnerai donc un lien vers le site lorsque la beta-test sera ouverte :).<br/>
 			<a href="/jean-massat/images/images_jema/Rapport_de_stage-Jean Baptiste_Priam_Massat-Art Manager.pdf">Visionner mon rapport de stage</a> (pdf)<br/>
 		</p>
-		<div class="progress progress-success progress-striped jema_project_separator">
+		<div class="progress progress-warning progress-striped jema_project_separator">
     		<div class="bar" style="width: 100%;"></div>
     	</div>
 	<h1 class="jema_cv_title">Curriculum Vitae</h1>

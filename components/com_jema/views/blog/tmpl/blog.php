@@ -64,7 +64,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 				Posté le <?php echo $row["date_creation"] ?>
 			</span>
 			<br/><br/>
-			<div class="progress progress-striped">
+			<div class="progress progress-info progress-striped">
 		    	<div class="bar bar-warning" style="width: 100%;"></div>
 		    </div>
 		</div>
