@@ -66,8 +66,10 @@
 
  			iconUser.addEvent('mouseover', function(){
  				if(currentSlider=='User'){}
- 				else{ 
- 					lastSlided.setStyle('opacity', 0); 
+ 				else{
+ 					lastSlided.setStyle('opacity', 0);
+ 					lastSlided.setStyle('visibility', 'hidden');
+ 					slideUser.setStyle('visibility', 'visible');
  					slideUser.setStyle('opacity', 1);
  					currentSlider = 'User';
  					lastSlided = slideUser;
@@ -77,9 +79,11 @@
  			iconScreen.addEvent('mouseover', function(){
  				if(currentSlider=='Screen'){}
  				else{
- 					lastSlided.setStyle('opacity', 0);  
+ 					lastSlided.setStyle('visibility', 'hidden');
+ 					lastSlided.setStyle('opacity', 0);
+ 					slideScreen.setStyle('visibility', 'visible');
  					slideScreen.setStyle('opacity', 1);
- 					currentSlider= 'Screen';
+ 					currentSlider = 'Screen';
  					lastSlided = slideScreen;
  				}
 
@@ -88,7 +92,9 @@
  			iconStar.addEvent('mouseover', function(){
  				if(currentSlider=='Star'){}
  				else{
- 					lastSlided.setStyle('opacity', 0); 
+ 					lastSlided.setStyle('opacity', 0);
+ 					lastSlided.setStyle('visibility', 'hidden');
+ 					slideStar.setStyle('visibility', 'visible');
  					slideStar.setStyle('opacity', 1);
  					currentSlider = 'Star';
  					lastSlided = slideStar;
