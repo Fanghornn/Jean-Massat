@@ -10,7 +10,7 @@
 defined('_JEXEC') or die('Not that way');
 require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.php');
 ?>
-	<img src="/jean-massat/images/images_jema/gentlemen.jpg" class="jema_about_img"/>
+	<img src="/jean-massat/images/images_jema/gentlemen.jpg" class="jema_about_img" alt="gentlemen"/>
 	<p class="jema_about_p">
 		Je m'appelle Jean-Baptiste Priam Massat, j'ai 20 ans, originaire des landes et actuellement à la recherche d'un emploi en tant que développeur. L'informatique est une passion qui m'anime depuis ma plus tendre enfance. 
 		Tout a commencé lorsque je démontais mon boitier d'ordinateur dans ma chambre pour essayer de réparer une carte graphique défectueuse qui m'empêchait de lancer des applications 3D comme des jeux vidéo. 

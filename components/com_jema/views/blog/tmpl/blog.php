@@ -42,7 +42,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		<?php if($row["img_src"]!=null){ ?>
 		<br/>
 		<span class="pagination-centered">
-			<img class="<?php if(Jema::isMobile()) echo "jema_article_image"; else echo "jema_article_image img-polaroid"; ?>" src="<?php echo $row["img_src"]; ?>"/>
+			<img class="<?php if(Jema::isMobile()) echo "jema_article_image"; else echo "jema_article_image img-polaroid"; ?>" src="<?php echo $row["img_src"]; ?>" alt="<?php echo $row["titre_article"]; ?>"/>
 		</span>
 		<?php } ?>
 		<br/>

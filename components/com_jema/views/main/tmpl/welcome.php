@@ -30,10 +30,9 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 
    			<div class="jema_slide_text_screen">
                <p>
-   				  La passion qui m'anime dans le vie, c'est le developpement informatique !<br/><br/>
-   				  À l'heure ou j'écris ces lignes, je sais travailler avec<br/><br/>
+   				  La passion qui m'anime dans la vie, c'est le developpement informatique !<br/><br/>
+   				  À l'heure ou j'écris ces lignes, je sais travailler avec<br/>
                </p>
-               <span>
       				<ul class="jema_skills">
       					<li>PHP 5</li>
       					<li>XHTML/HTML5/CSS3</li>
@@ -43,7 +42,6 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
       					<li>Lamp/Wamp</li>
       					<li>Linux/Windows</li>
       				</ul><br/>
-               </span>
                <p style="padding-right:2em">
       				Le développement est un métier avec d'innombrables ressources et langages, c'est pourquoi mon but 
       				est d'être un développeur polyvalent et procédant à une veille technologique constante.

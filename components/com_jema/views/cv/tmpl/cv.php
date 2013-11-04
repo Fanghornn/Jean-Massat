@@ -11,7 +11,7 @@ defined('_JEXEC') or die('Not that way');
 require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.php');
 ?>
 	<br/>
-	<h2 class="jema_cv_subtitle">Jean Massat (2013)</h3>
+	<h2 class="jema_cv_subtitle">Jean Massat (2013)</h2>
 	<p class="jema_cv_p">
 		Jean-Massat est le site sur lequel vous vous trouvez actuellement. Il m'aura fallu un mois entier environ avant de le mettre au point avec la quasi-totalité
 		des composantes et fonctionnalités prévues initialement.<br/>
@@ -33,7 +33,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		<a href="https://github.com/jean-massat/Jean-Massat/blob/master/components/com_jema/helpers/Class/JS/border.menu.js" target="about:blank">(voir le code)</a><br/><br/>
 
 		Le code source est libre et disponible sur Github<br/><br/>
-		Je tiens particulièrement à remercier <a href="https://www.facebook.com/alice.crabiitorres?ref=ts&fref=ts">Alice Torres</a> (<a href="mailto:alice_064@hotmail.fr">alice_064@hotmail.fr</a>) pour son superbe travail quant à la bannière de ce site.<br/><br/>
+		Je tiens particulièrement à remercier <a href="https://www.facebook.com/alice.crabiitorres?ref=ts&ampfref=ts">Alice Torres</a> (<a href="mailto:alice_064@hotmail.fr">alice_064@hotmail.fr</a>) pour son superbe travail quant à la bannière de ce site.<br/><br/>
 		Un simple click de votre part sur le titre de ce projet vous dirigera sur son <a href="https://github.com/jean-massat/Jean-Massat" target="about:blank">repository</a>.<br/><br/>
 		ps: Le MVC se trouve dans components/com_jema/ pour ceux qui ne connaissent pas Joomla.
 	</p>
@@ -57,18 +57,15 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 			</li>
 		<br/>
 			<li>
-				[JS - Ajax - PHP] Dans un formulaire de création d'oeuvres, albums ou contacts, proposer un gestionnaire graphique en <strong>[JS]Mootools</strong> entier permettant de leur affecter une image qui les identifiera.<br/>
+				[JS - Ajax - PHP] Dans un formulaire de création d'oeuvres, albums ou contacts, proposer un gestionnaire graphique en <strong>[JS]Mootools</strong> entier permettant de leur affecter une image qui les identifiera.<br/><br/>
 				<ul>
-					<br/>
 					<li>
-						Proposer une solution de Drag&Drop(Glisser-Deposer) d'images provenant du système d'exploitation du client dans le navigateur au sein du formulaire pour en ajouter une.
+						Proposer une solution de Drag&amp;Drop(Glisser-Deposer) d'images provenant du système d'exploitation du client dans le navigateur au sein du formulaire pour en ajouter une.<br/><br/>
 					</li>
-					<br/>
 					<li>
 						Afficher l'image en plein écran avec ses caractéristiques dans un cadre. Redimensionner l'image selon tous les types de résolutions possibles pour qu'elle apparaisse 
-						en pleine page et correctement dimensionnée. Un bouton de fermeture permet de revenir sur le formulaire d'enregistrement.<br/>
+						en pleine page et correctement dimensionnée. Un bouton de fermeture permet de revenir sur le formulaire d'enregistrement.<br/><br/>
 					</li>
-					<br/>
 					<li>
 						<strong>[PHP]</strong> Faire des vérifications de l'image avant de l'enregistrer sur le serveur (nettoyer les caractères spéciaux des noms, contrôler l'extension).<br/><br/>
 					</li>
@@ -85,5 +82,5 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
     		<div class="bar" style="width: 100%;"></div>
     	</div>
 	<h1 class="jema_cv_title">Curriculum Vitae</h1>
-	<a href="/jean-massat/images/images_jema/cv_jb.jpg" target="about:blank"><img src="images/images_jema/cv_jb.jpg" class="jema_img_cv"/></a>
+	<a href="/jean-massat/images/images_jema/cv_jb.jpg" target="about:blank"><img src="images/images_jema/cv_jb.jpg" class="jema_img_cv" alt="cv_jean_baptiste_priam_massat"/></a>
 </div>

@@ -23,7 +23,7 @@ defined('_JEXEC') or die('Not that way');
 </div>
 
 <?php }else{ ?>
-<a href="/jean-massat/"><img src="/jean-massat/images/images_jema/ban_jema2.jpg" class="jema_banner"/></a>
+<a href="/jean-massat/"><img src="/jean-massat/images/images_jema/ban_jema2.jpg" class="jema_banner" alt="Bannière_Jean_Massat"/></a>
 <div class="jema_cadre_menu"> 
 	<div class="jema_toggle_classic_menu">Menu</div>
 	<a class="jema_btn jema_btn_home" href="/jean-massat/">.:: Accueil ::.<i class="icon-fast-forward jema_icon_menu jem_icon_home"></i></a><br/><br/>
