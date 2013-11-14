@@ -1,4 +1,4 @@
-![alt text](https://github.com/jean-massat/Jean-Massat/blob/master/images/images_jema/ban_jema2.jpg "ban_jema")
+[logo]: https://github.com/jean-massat/Jean-Massat/blob/master/images/images_jema/ban_jema2.jpg "ban_jema"
 Jean-Massat
 ===========
 
