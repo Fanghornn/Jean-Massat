@@ -1,3 +1,4 @@
+![alt text](https://github.com/jean-massat/Jean-Massat/blob/master/images/images_jema/ban_jema2.jpg "ban_jema")
 Jean-Massat
 ===========
 
@@ -62,7 +63,7 @@ Paramètres de Gantry
 ===========
 Pour les CSS de Gantry modifié, récuperer gantry-custom.css dans template/gantry/css/ puis le remettre au même emplacement sur votre environement de travail après avoir installé Gantry.
 
-Enlever le logo puis tous les affichages de features sauf le "To-top Scroller" et le placer dans mainbottom-a avec pour texte "<i class="icon-chevron-up"></i>"
+Enlever le logo puis tous les affichages de features sauf le "To-top Scroller" et le placer dans mainbottom-a avec pour texte une balise html: "i" class="icon-chevron-up" cela fera appel à BootStrap pour afficher le logo du scroller.
 
 
 Auteurs
