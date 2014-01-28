@@ -65,10 +65,17 @@ window.addEvent('domready', function(){
  			divMenu.addClass('jema_hidden');
 
  			iconUser.addEvent('mouseover', function(){
- 				if(currentSlider=='User'){}
+ 				if(currentSlider=='User'){
+ 					var fnUser = function(){ slideUser.removeClass('wobble animated'); }
+ 					if(slideUser.hasClass('wobble animated')){}
+ 					else{
+ 						slideUser.toggleClass('wobble animated', true);
+ 						fnUser.delay(1000);
+ 					}
+ 				}
  				else{
- 					lastSlided.setStyle('opacity', 0);
  					lastSlided.setStyle('visibility', 'hidden');
+ 					lastSlided.setStyle('opacity', 0);
  					slideUser.setStyle('visibility', 'visible');
  					slideUser.setStyle('opacity', 1);
  					currentSlider = 'User';
@@ -77,7 +84,14 @@ window.addEvent('domready', function(){
  			});
 
  			iconScreen.addEvent('mouseover', function(){
- 				if(currentSlider=='Screen'){}
+ 				if(currentSlider=='Screen'){
+ 					var fnScreen = function(){ slideScreen.removeClass('wobble animated'); }
+ 					if(slideScreen.hasClass('wobble animated')){}
+ 					else{
+ 						slideScreen.toggleClass('wobble animated', true);
+ 						fnScreen.delay(1000);
+ 					}
+ 				}
  				else{
  					lastSlided.setStyle('visibility', 'hidden');
  					lastSlided.setStyle('opacity', 0);
@@ -90,7 +104,14 @@ window.addEvent('domready', function(){
  			});
 
  			iconStar.addEvent('mouseover', function(){
- 				if(currentSlider=='Star'){}
+ 				if(currentSlider=='Star'){
+ 					var fnStar = function(){ slideStar.removeClass('wobble animated'); }
+ 					if(slideStar.hasClass('wobble animated')){}
+ 					else{
+ 						slideStar.toggleClass('wobble animated', true);
+ 						fnStar.delay(1000);
+ 					}
+ 				}
  				else{
  					lastSlided.setStyle('opacity', 0);
  					lastSlided.setStyle('visibility', 'hidden');
