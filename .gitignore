@@ -420,6 +420,7 @@ templates/gantry/*
 !templates/gantry/css
 templates/gantry/css/*
 !templates/gantry/css/gantry-custom.css
+!templates/gantry/favicon.ico
 modules/*
 configuration.php
 index.php
