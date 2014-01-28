@@ -6,7 +6,7 @@
  * @copyright Copyright © 2013, jean-massat.
  * @license This software is under MIT licence.
  */
- window.onload = function(){
+ window.addEvent('domready', function(){
 	window.scrollTo(0,0);
 	if(document.getElement('.jema_mobile_menu_btn_container')){
 		var mobileMenu = document.getElement('.jema_mobile_menu_btn'),
@@ -102,4 +102,4 @@
  			});
 		}
 	}
-}
+});

@@ -14,5 +14,9 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 		<div class="jema_test_forum_js">
 		Aucun travail pour l'instant
 		</div>
+		<?php
+			$testdir = (__DIR__);
+			echo $testdir;
+		?>
 
 </div>
