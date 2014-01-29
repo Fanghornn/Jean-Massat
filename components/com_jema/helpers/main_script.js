@@ -52,51 +52,100 @@ window.addEvent('domready', function(){
 				}
 			}
 		}else{
+		/**
+		  * Si on est sur la page d'accueil, le script d'animation de la page se déclenche !
+		  * Note:
+		  * I'm also the author of this mootools script, but the cool css script for css animation is
+		  * written by Daniel Eden, thanks to him.
+		  * for more info, please visit his profile @ https://github.com/daneden
+		  * animate.css's repo : https://github.com/daneden/animate.css
+		  * Html Button has been made by botelho, please visit https://github.com/codrops/IconHoverEffects
+		  */
+
+			//On capture les élements HTML des boutons
+			//Et les texte qui vont être animés
 			var iconUser = document.getElement('.hi-icon-user'),
  			iconScreen = document.getElement('.hi-icon-screen'),
  			iconStar = document.getElement('.hi-icon-star'),
  			slideUser = document.getElement('.jema_slide_text_user'),
  			slideScreen = document.getElement('.jema_slide_text_screen'),
  			slideStar = document.getElement('.jema_slide_text_star'),
+
  			currentSlider = 'User',
  			lastSlided = slideUser,
- 			divMenu = document.getElement('.jema_cadre_menu');
 
+ 			//On cache le menu vu qu'il y en à un dans le troisieme bouton !
+ 			divMenu = document.getElement('.jema_cadre_menu');
  			divMenu.addClass('jema_hidden');
 
  			iconUser.addEvent('mouseover', function(){
  				if(currentSlider=='User'){
- 					var fnUser = function(){ slideUser.removeClass('wobble animated'); }
+ 					var fnUserWobble = function(){ slideUser.removeClass('wobble animated'); };
  					if(slideUser.hasClass('wobble animated')){}
  					else{
  						slideUser.toggleClass('wobble animated', true);
- 						fnUser.delay(1000);
+ 						fnUserWobble.delay(1100);
  					}
  				}
  				else{
- 					lastSlided.setStyle('visibility', 'hidden');
- 					lastSlided.setStyle('opacity', 0);
+ 					var fastCaptureLastSlided = lastSlided;
+ 					var fnDelUserRotateClass = function(){ 
+ 						slideUser.removeClass('rotateInUpRight animated');
+ 						fastCaptureLastSlided.removeClass('rotateOutDownLeft animated');
+ 					}
+
  					slideUser.setStyle('visibility', 'visible');
  					slideUser.setStyle('opacity', 1);
+
+ 					lastSlided.setStyle('opacity', '0');
+
+ 					lastSlided.addClass('rotateOutDownLeft animated');
+ 					slideUser.addClass('rotateInUpRight animated');
+ 					fnDelUserRotateClass.delay(1100);
+
  					currentSlider = 'User';
  					lastSlided = slideUser;
  				}
  			});
 
  			iconScreen.addEvent('mouseover', function(){
+ 				//Si l'utilisateur s'amuse avec le même bouton on déclenche une animation pour rendre la page vivante
  				if(currentSlider=='Screen'){
- 					var fnScreen = function(){ slideScreen.removeClass('wobble animated'); }
+ 					var fnScreenWobble = function(){ slideScreen.removeClass('wobble animated'); }
  					if(slideScreen.hasClass('wobble animated')){}
  					else{
  						slideScreen.toggleClass('wobble animated', true);
- 						fnScreen.delay(1000);
+ 						fnScreenWobble.delay(1000);
  					}
  				}
  				else{
- 					lastSlided.setStyle('visibility', 'hidden');
- 					lastSlided.setStyle('opacity', 0);
+ 					//Capturer le dernier texte selectionné avant qu'il soit remplacé en fin de fonction durant le .delay()
+ 					//En fait le JavaScript est tellement rapide que lastSlided prend une nouvelle valeur le temps que la fonction fasse son job
+ 					var fastCaptureLastSlided = lastSlided; 
+
+ 					//Création d'une fonction activée avec délai pour nettoyer le contenu des class 
+ 					var fnDelScreenRotateClass = function(){
+ 						slideScreen.removeClass('rotateInUpRight animated');
+ 						fastCaptureLastSlided.removeClass('rotateOutDownLeft animated');
+ 					}
+
+ 					// On rend le texte visible et sous forme de block juste avant d'activer l'anim
  					slideScreen.setStyle('visibility', 'visible');
  					slideScreen.setStyle('opacity', 1);
+
+ 					// On cache naturellement le texte precedent
+ 					lastSlided.setStyle('opacity', '0');
+
+ 					//Pendant que l'ancien texte s'efface avec une transition sur opacity, on déclenche l'animation de sortie
+ 					lastSlided.addClass('rotateOutDownLeft animated');
+
+ 					//On déclenche l'animation d'entrée du nouveau texte, ici "text dans slideScreen"
+ 					slideScreen.addClass('rotateInUpRight animated');
+
+ 					//On déclenche la fonction plus haut
+ 					//Le délai permet de laisser le temps à l'animation de sortie de s'effectuer avant de supprimer la class css qui la declenche
+ 					fnDelScreenRotateClass.delay(1100);
+
  					currentSlider = 'Screen';
  					lastSlided = slideScreen;
  				}
@@ -105,18 +154,29 @@ window.addEvent('domready', function(){
 
  			iconStar.addEvent('mouseover', function(){
  				if(currentSlider=='Star'){
- 					var fnStar = function(){ slideStar.removeClass('wobble animated'); }
+ 					var fnStarWobble = function(){ slideStar.removeClass('wobble animated'); }
  					if(slideStar.hasClass('wobble animated')){}
  					else{
  						slideStar.toggleClass('wobble animated', true);
- 						fnStar.delay(1000);
+ 						fnStarWobble.delay(1000);
  					}
  				}
  				else{
- 					lastSlided.setStyle('opacity', 0);
- 					lastSlided.setStyle('visibility', 'hidden');
+ 					var fastCaptureLastSlided = lastSlided;
+ 					var fnDelStarRotateClass = function(){
+ 						slideStar.removeClass('rotateInUpRight animated');
+ 						fastCaptureLastSlided.removeClass('rotateOutDownLeft animated');
+ 					}
  					slideStar.setStyle('visibility', 'visible');
  					slideStar.setStyle('opacity', 1);
+
+ 					lastSlided.setStyle('opacity', 0);
+
+ 					lastSlided.addClass('rotateOutDownLeft animated');
+ 					slideStar.addClass('rotateInUpRight animated');
+ 					fnDelStarRotateClass.delay(1100);
+
+
  					currentSlider = 'Star';
  					lastSlided = slideStar;
  				}
