@@ -7,7 +7,7 @@
 .jema_newsfeed_displayer_title{ font-weight: bold; display:block; text-align: center;}
 .jema_newsfeed_displayer{border-top: .2em solid darkgrey ; border-bottom: .2em solid darkgrey ;}
 .jema_home_displayer{position:absolute; border-left:solid orange .3em; border-right:solid orange .3em; z-index:1; border-radius:1em; height:50%; width:76%; margin-left:8%; padding-left:3em;}
-.jema_slide_text_user{ transition:opacity 1s; position:absolute; z-index:2; text-align:center; top:-2em; opacity:1; padding-right:5em; top:3em; width:100%;}
-.jema_slide_text_screen{ transition:opacity 1s; opacity:0; position:absolute; z-index:3; visibility: hidden; padding-right:2em;}
+.jema_slide_text_user{ transition:opacity 0.5s; position:absolute; z-index:2; text-align:center; top:-2em; opacity:1; padding-right:5em; top:3em; width:100%;}
+.jema_slide_text_screen{ transition:opacity 0.5s; opacity:0; position:absolute; z-index:3; visibility: hidden; padding-right:2em;}
 .jema_skills{padding-left:3em;}
-.jema_slide_text_star{transition:opacity 1s; opacity:0; position:absolute; z-index:4; text-align:center; font-size:1.3em; visibility: hidden; width:100%; top:3em;}
+.jema_slide_text_star{transition:opacity 0.5s; opacity:0; position:absolute; z-index:4; text-align:center; font-size:1.3em; visibility: hidden; width:100%; top:3em;}
