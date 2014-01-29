@@ -34,12 +34,12 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
    				  À l'heure ou j'écris ces lignes, je sais travailler avec<br/>
                </p>
       				<ul class="jema_skills">
-      					<li>PHP 5</li>
-      					<li>XHTML/HTML5/CSS3</li>
-      					<li>Joomla!3</li>
-      					<li>JavaScript/Mootools/JQuery/Ajax</li>
-      					<li>Git/Github</li>
-      					<li>Lamp/Wamp</li>
+      					<li>PHP 5</li><br/>
+      					<li>XHTML/HTML5/CSS3</li><br/>
+      					<li>Joomla!3</li><br/>
+      					<li>JavaScript/Mootools/JQuery/Ajax</li><br/>
+      					<li>Git/Github</li><br/>
+      					<li>Lamp/Wamp</li><br/>
       					<li>Linux/Windows</li>
       				</ul><br/>
                <p style="padding-right:2em">
