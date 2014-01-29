@@ -34,7 +34,7 @@ require_once(JPATH_COMPONENT.DS.'helpers'.DS.'Class'.DS.'PHP'.DS.'jema_header.ph
 	?>
 	<br/>
 	<div class="jema_article" data-article="<?php echo $row["id_article"]; ?>">
-		<a href="/jean-massat/index.php/article?id_article=<?php echo $row["id_article"]; ?>">
+		<a>
 			<span class="jema_article_title">
 					<?php echo $row["titre_article"]; ?>
 			</span>
