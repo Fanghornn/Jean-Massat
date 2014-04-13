@@ -78,5 +78,5 @@ Sources
 
 Loaded Font : http://www.dafont.com/fr/loaded.font
 Icons : http://glyphicons.com/
-
+Cheat Joomla+gantry: https://groups.google.com/forum/#!topic/gantry-framework-for-joomla-users/U57a7SquMQU
 
